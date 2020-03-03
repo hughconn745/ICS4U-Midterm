@@ -1,0 +1,15 @@
+To commit code, once your git is set up:
+
+git pull origin master (to retrieve the latest code)
+
+git add . (to add all changed code)
+
+git commit -m "message" (to commit code, with an identafiable message about changes where message is)
+
+git push origin master (to push to commit to github)
+
+---------------------------------------------------------------------------------------------------------
+
+To pull code:
+
+git pull origin master
