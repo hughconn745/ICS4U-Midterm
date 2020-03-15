@@ -1,7 +1,7 @@
 //Creator: Tahrima Rahman
 //Name: search
-//Description: looks for *find in *input and adds each index at which "find" occurs in "input" to a pointer
-//Parameters: array of chars/ a string literal
+//Description: looks for *find in *input and adds each index at which "find" occurs in "input" to a pointer, returns int pointer
+//Parameters: user input, what to search, int pointer pointing to the first element of an int array
 //Dependencies: compare_each, stdlib.h for strlen function
 //Throws: NA
 int* search(char *input, char *find, int *indexPtr){
