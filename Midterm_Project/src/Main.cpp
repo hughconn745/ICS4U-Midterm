@@ -14,7 +14,7 @@ int main() {
 	 * }
 	 * or will the user have the option to exit?
 	 *
-	 * the search function will accept an int pointer pointing to the first element of the int array so we need something like:
+	 * the search function will accept an int pointer pointing to the first element of the int array so main needs something like:
 	 *
 	 * int indexes[size of user input];
 	 * int *indexPtr = &index[0];
