@@ -4,6 +4,11 @@
 //Parameters: user input, what to search, int pointer pointing to the first element of an int array
 //Dependencies: compare_each, stdlib.h for strlen function
 //Throws: NA
+#include <string.h>
+#include <iostream>
+#include "Compare_Each.h"
+
+using namespace std;
 int* search(char *input, char *find, int *indexPtr){
 
     bool found = true; //will evaluate if find has been found in indexPtr based on whether each char is identical

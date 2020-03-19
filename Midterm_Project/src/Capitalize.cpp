@@ -4,6 +4,9 @@
 //Parameters: array of chars/ a string literal
 //Dependencies: NA
 //Throws: NA
+
+#include <ctype.h>
+
 void sentence_case(char *input){
 
 	if (isalpha(input[0])){//capitalize first letter in input if it is a letter

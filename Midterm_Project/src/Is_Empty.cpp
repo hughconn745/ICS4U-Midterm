@@ -8,7 +8,7 @@
 bool is_empty(int arr[]){
     bool noElement;
 
-    if (arr[0] == NULL || arr[0] == -1){
+    if (arr[0] == '\0' || arr[0] == -1){
         noElement = true;
 
     } else {

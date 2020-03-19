@@ -4,6 +4,10 @@
 //Parameters: array of chars/ a string literal
 //Dependencies: NA
 //Throws: NA
+
+#include <ctype.h>
+#include <string.h>
+
 int count_words(char *input){
 
 	int words = 0;

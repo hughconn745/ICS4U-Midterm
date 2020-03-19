@@ -56,3 +56,243 @@ g++ -o Midterm_Project.exe "src\\Midterm_Project.o"
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
 g++ -o Midterm_Project.exe "src\\Main.o" 
+21:05:53 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Is_Empty.o" "..\\src\\Is_Empty.cpp" 
+..\src\Is_Empty.cpp: In function 'bool is_empty(int*)':
+..\src\Is_Empty.cpp:11:19: error: 'NULL' was not declared in this scope
+     if (arr[0] == NULL || arr[0] == -1){
+                   ^~~~
+21:06:13 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Capitalize.o" "..\\src\\Capitalize.cpp" 
+..\src\Capitalize.cpp: In function 'void sentence_case(char*)':
+..\src\Capitalize.cpp:9:22: error: 'isalpha' was not declared in this scope
+  if (isalpha(input[0])){//capitalize first letter in input if it is a letter
+                      ^
+..\src\Capitalize.cpp:10:30: error: 'toupper' was not declared in this scope
+   input[0] = toupper(input[0]);
+                              ^
+..\src\Capitalize.cpp:18:50: error: 'isalpha' was not declared in this scope
+    if (input[x + 1] != 0x20 && isalpha(input[x+1])){ //if user didn't put a space between period of previous sentence and beginning of new sentence AND next element is a letter
+                                                  ^
+..\src\Capitalize.cpp:19:36: error: 'toupper' was not declared in this scope
+     input[x+1] = toupper(input[x+1]); //capitalize the first letter of the new sentence anyway
+                                    ^
+..\src\Capitalize.cpp:24:37: error: 'toupper' was not declared in this scope
+      input[x+2] = toupper(input[x+2]); //capitalize first letter after the space after a period
+                                     ^
+21:06:51 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp: In function 'int* search(char*, char*, int*)':
+..\src\Search.cpp:11:31: error: 'strlen' was not declared in this scope
+     char numStr = strlen(input);
+                               ^
+..\src\Search.cpp:16:57: error: 'compare_each' was not declared in this scope
+             found = compare_each(input, find, j, numFind); //compare each letter to validate if find has been found in input
+                                                         ^
+..\src\Search.cpp:18:13: error: 'cout' was not declared in this scope
+             cout << "adding " << j << endl;
+             ^~~~
+..\src\Search.cpp:18:39: error: 'endl' was not declared in this scope
+             cout << "adding " << j << endl;
+                                       ^~~~
+21:07:24 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
+..\src\Array_Resize.cpp: In function 'char** resizeArray(char**)':
+..\src\Array_Resize.cpp:9:9: warning: address of local variable 'buffer' returned [-Wreturn-local-addr]
+  char * buffer[para_size + 1];
+         ^~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Capitalize.o" "..\\src\\Capitalize.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp: In function 'int* search(char*, char*, int*)':
+..\src\Search.cpp:11:31: error: 'strlen' was not declared in this scope
+     char numStr = strlen(input);
+                               ^
+..\src\Search.cpp:16:57: error: 'compare_each' was not declared in this scope
+             found = compare_each(input, find, j, numFind); //compare each letter to validate if find has been found in input
+                                                         ^
+..\src\Search.cpp:18:13: error: 'cout' was not declared in this scope
+             cout << "adding " << j << endl;
+             ^~~~
+..\src\Search.cpp:18:39: error: 'endl' was not declared in this scope
+             cout << "adding " << j << endl;
+                                       ^~~~
+21:07:40 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Is_Empty.o" "..\\src\\Is_Empty.cpp" 
+..\src\Is_Empty.cpp: In function 'bool is_empty(int*)':
+..\src\Is_Empty.cpp:11:19: error: 'NULL' was not declared in this scope
+     if (arr[0] == NULL || arr[0] == -1){
+                   ^~~~
+21:08:17 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Add_Null.o" "..\\src\\Add_Null.cpp" 
+..\src\Add_Null.cpp: In function 'char* add_null(char*)':
+..\src\Add_Null.cpp:20:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }//end add_null
+ ^
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp: In function 'int* search(char*, char*, int*)':
+..\src\Search.cpp:18:57: error: 'compare_each' was not declared in this scope
+             found = compare_each(input, find, j, numFind); //compare each letter to validate if find has been found in input
+                                                         ^
+..\src\Search.cpp:20:13: error: 'cout' was not declared in this scope
+             cout << "adding " << j << endl;
+             ^~~~
+..\src\Search.cpp:20:39: error: 'endl' was not declared in this scope
+             cout << "adding " << j << endl;
+                                       ^~~~
+21:08:42 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Compare_Each.o" "..\\src\\Compare_Each.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp: In function 'int* search(char*, char*, int*)':
+..\src\Search.cpp:18:57: error: 'compare_each' was not declared in this scope
+             found = compare_each(input, find, j, numFind); //compare each letter to validate if find has been found in input
+                                                         ^
+..\src\Search.cpp:20:13: error: 'cout' was not declared in this scope
+             cout << "adding " << j << endl;
+             ^~~~
+..\src\Search.cpp:20:39: error: 'endl' was not declared in this scope
+             cout << "adding " << j << endl;
+                                       ^~~~
+21:08:54 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp: In function 'int* search(char*, char*, int*)':
+..\src\Search.cpp:18:57: error: 'compare_each' was not declared in this scope
+             found = compare_each(input, find, j, numFind); //compare each letter to validate if find has been found in input
+                                                         ^
+..\src\Search.cpp:20:13: error: 'cout' was not declared in this scope
+             cout << "adding " << j << endl;
+             ^~~~
+..\src\Search.cpp:20:39: error: 'endl' was not declared in this scope
+             cout << "adding " << j << endl;
+                                       ^~~~
+21:09:11 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp: In function 'int* search(char*, char*, int*)':
+..\src\Search.cpp:19:57: error: 'compare_each' was not declared in this scope
+             found = compare_each(input, find, j, numFind); //compare each letter to validate if find has been found in input
+                                                         ^
+..\src\Search.cpp:21:13: error: 'cout' was not declared in this scope
+             cout << "adding " << j << endl;
+             ^~~~
+..\src\Search.cpp:21:13: note: suggested alternative:
+In file included from ..\src\Search.cpp:8:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:61:18: note:   'std::cout'
+   extern ostream cout;  /// Linked to standard output
+                  ^~~~
+..\src\Search.cpp:21:39: error: 'endl' was not declared in this scope
+             cout << "adding " << j << endl;
+                                       ^~~~
+..\src\Search.cpp:21:39: note: suggested alternative:
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Search.cpp:8:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:590:5: note:   'std::endl'
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^~~~
+21:10:52 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp: In function 'int* search(char*, char*, int*)':
+..\src\Search.cpp:12:10: warning: unused variable 'found' [-Wunused-variable]
+     bool found = true; //will evaluate if find has been found in indexPtr based on whether each char is identical
+          ^~~~~
+..\src\Search.cpp:14:10: warning: unused variable 'numStr' [-Wunused-variable]
+     char numStr = strlen(input);
+          ^~~~~~
+..\src\Search.cpp:15:10: warning: unused variable 'numFind' [-Wunused-variable]
+     char numFind = strlen(find);
+          ^~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Is_Empty.o" "..\\src\\Is_Empty.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Word_Count.o" "..\\src\\Word_Count.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Compare_Each.o" "src\\Is_Empty.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+src\Array_Resize.o: In function `Z11resizeArrayPPc':
+F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Array_Resize.cpp:9: undefined reference to `para_size'
+F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Array_Resize.cpp:11: undefined reference to `para_size'
+F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Array_Resize.cpp:16: undefined reference to `para_size'
+src\Main.o: In function `main':
+F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Main.cpp:30: undefined reference to `para_size'
+F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Main.cpp:32: undefined reference to `para_size'
+src\Main.o:F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Main.cpp:34: more undefined references to `para_size' follow
+collect2.exe: error: ld returned 1 exit status
+21:12:41 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp: In function 'int* search(char*, char*, int*)':
+..\src\Search.cpp:19:57: error: 'compare_each' was not declared in this scope
+             found = compare_each(input, find, j, numFind); //compare each letter to validate if find has been found in input
+                                                         ^
+21:14:14 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Compare_Each.o" "src\\Is_Empty.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+src\Array_Resize.o: In function `Z11resizeArrayPPc':
+F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Array_Resize.cpp:9: undefined reference to `para_size'
+F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Array_Resize.cpp:11: undefined reference to `para_size'
+F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Array_Resize.cpp:16: undefined reference to `para_size'
+collect2.exe: error: ld returned 1 exit status
+21:14:49 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Compare_Each.o" "src\\Is_Empty.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+21:15:25 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Compare_Each.o" "src\\Is_Empty.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+21:16:45 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Compare_Each.o" "src\\Is_Empty.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+21:17:30 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Compare_Each.o" "src\\Is_Empty.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+Info: Nothing to build for Midterm_Project
+21:19:13 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+..\src\Main.cpp: In function 'int main()':
+..\src\Main.cpp:43:66: warning: comparison with string literal results in unspecified behavior [-Waddress]
+  while(fgets(paragraph[i], 30, stdin) != NULL && paragraph[i] != ""){
+                                                                  ^~
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Compare_Each.o" "src\\Is_Empty.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+21:19:57 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Compare_Each.o" "src\\Is_Empty.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+21:20:56 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Compare_Each.o" "src\\Is_Empty.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+21:22:00 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+..\src\Main.cpp: In function 'int main()':
+..\src\Main.cpp:47:16: error: 'pargraph' was not declared in this scope
+    resizeArray(pargraph);
+                ^~~~~~~~
+21:23:26 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Compare_Each.o" "src\\Is_Empty.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+21:24:04 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+..\src\Main.cpp: In function 'int main()':
+..\src\Main.cpp:45:37: error: incompatible types in assignment of 'char**' to 'char* [(((ssizetype)para_size) + 1)]'
+    paragraph = resizeArray(paragraph);
+                                     ^

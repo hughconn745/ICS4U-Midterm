@@ -3,8 +3,12 @@
 #include <string.h> //string processing functions
 #include <cstring>
 #include <iostream>
+#include "Main.h"
+#include "Array_Resize.h"
+
 
 using namespace std;
+int para_size = 1;
 
 int main() {
 
@@ -24,7 +28,8 @@ int main() {
 	 *
 */
 
-	char * paragraph[para_size];
+	char * paragraph[para_size + 1];
+
 
 	for(int i = 0; i < para_size; i++)
 		paragraph[i] = new char[ARRAY_LENGTH];
@@ -32,15 +37,23 @@ int main() {
 	cout << "Please input your paragraph, type end when done." << endl;
 
 	fflush(stdout);
+	int i = 0;
+	while(fgets(paragraph[i], 30, stdin) != NULL){
+		cout << "Copying all paragraph contents" << endl;
+			paragraph = resizeArray(paragraph);
+			i++;
 
-	while(strncmp(paragraph[para_size], "end", 3)) {
 
-	if(fgets(paragraph[para_size - 1], 30, stdin) != NULL) {
-		cout << "Printing Paragraph contents" << endl;
-		fputs(paragraph[1], stdout);
-	}else
-		break;
+			cout << "Printing Paragraph contents" << endl;
+				for(int j = 0; j < i; j++) {
+					fputs(paragraph[j], stdout);
+					fflush(stdout);
+				}
 	}
+
+	cout << "Printing Paragraph contents" << endl;
+	for(int j = 0; j < i; j++)
+		fputs(paragraph[j], stdout);
 
 
 	return 0;
