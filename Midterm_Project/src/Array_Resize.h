@@ -1,6 +1,6 @@
 
 void getArraySize(char * array);
-char ** resizeArray(char * array[]);
+void resizeArray(int new_size);
 
 
 
