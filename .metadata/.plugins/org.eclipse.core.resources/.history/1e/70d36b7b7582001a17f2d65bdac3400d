@@ -5,7 +5,6 @@
 #include <iostream>
 #include "Main.h"
 #include "Array_Resize.h"
-#include "Replace.h"
 
 
 using namespace std;
@@ -14,8 +13,7 @@ int ARRAY_LENGTH = 30;
 char ** array = new char*[para_size + 1];
 
 int main() {
-	array[0] = new char[30];
-	array[1] = new char[30];
+
 	/*THINGS TO CONSIDER WHEN PROGRAMMING MAIN:
 	 * I'm guessing that the program will run through a while loop with the condition looking something like
 	 * while (1){
@@ -41,23 +39,30 @@ int main() {
 
 
 
-while(k < 5) {
+
 
 	if(fgets(array[k], 28, stdin) == NULL) {
 		return 1;
 	}
 
-	//if(k == para_size)
-		growArray(para_size + 1);
+	resizeArray(3);
 
 	k++;
 	para_size++;
 
-	cout << k << " : " << para_size << endl;
-}
+	cout << array << endl;
+			cout << "Printing Paragraph contents" << endl;
+				for(int j = 0; j < k; j++) {
+
+					fputs(array[j], stdout);
+					fflush(stdout);
+				}
+
+			cout << "End of paragraph contents" << endl;
+
+
 
 	cout << "Printing Paragraph contents" << endl;
-
 	for(int j = 0; j < k; j++)
 		fputs(array[j], stdout);
 
