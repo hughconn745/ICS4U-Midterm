@@ -1,0 +1,25 @@
+#include <windows.h>
+#include <iostream>
+#include "Main.h"
+
+using namespace std;
+
+void outputToClipboard(char ** array) {
+    const char* output = new char[ARRAY_LENGTH * para_size];
+
+    for(int i = 0; i < para_size; i++) {
+    	for(int j = 0; j < ARRAY_LENGTH; j++) {
+    		output[(i * ARRAY_LENGTH - 2) + j ] = array[i][j];
+    	}
+    }
+
+    const size_t len = strlen(output) + 1;
+    HGLOBAL hMem =  GlobalAlloc(GMEM_MOVEABLE, len);
+    memcpy(GlobalLock(hMem), output, len);
+    GlobalUnlock(hMem);
+    OpenClipboard(0);
+    EmptyClipboard();
+    SetClipboardData(CF_TEXT, hMem);
+    CloseClipboard();
+
+}

@@ -1,12 +1,7 @@
-20:00:52 **** Incremental Build of configuration Debug for project Midterm_Project ****
+20:13:14 **** Incremental Build of configuration Debug for project Midterm_Project ****
 Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
-..\src\Array_Resize.cpp: In function 'void resizeArray(int)':
-..\src\Array_Resize.cpp:54:11: warning: deleting array 'buffer'
-  delete []buffer;
-           ^~~~~~
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
 g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Compare_Each.o" "src\\Is_Empty.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
 
-20:00:55 Build Finished. 0 errors, 1 warnings. (took 2s.999ms)
+20:13:16 Build Finished. 0 errors, 0 warnings. (took 2s.28ms)
 

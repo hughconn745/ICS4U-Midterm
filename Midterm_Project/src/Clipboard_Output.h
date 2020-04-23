@@ -3,7 +3,7 @@
 #define CLIPBOARD_OUTPUT_H_
 
 
-void outputToClipboard(char * array);
+void outputToClipboard(char ** array);
 
 
 #endif /* CLIPBOARD_OUTPUT_H_ */

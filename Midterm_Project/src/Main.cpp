@@ -6,6 +6,8 @@
 #include "Main.h"
 #include "Array_Resize.h"
 #include "Replace.h"
+#include "Clipboard_Output.h"
+#include "Replace.h"
 
 
 using namespace std;
@@ -36,6 +38,8 @@ int main() {
 
 	fflush(stdout);
 
+
+
 	int k = 0;
 
 
@@ -47,7 +51,7 @@ while(k < 5) {
 		return 1;
 	}
 
-	//if(k == para_size)
+	if(k == para_size - 1)
 		growArray(para_size + 1);
 
 	k++;
@@ -60,6 +64,8 @@ while(k < 5) {
 
 	for(int j = 0; j < k; j++)
 		fputs(array[j], stdout);
+
+	outputToClipboard(array);
 
 	return 0;
 
