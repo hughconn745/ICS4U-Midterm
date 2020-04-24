@@ -7,3 +7,5 @@
 
 
 #endif /* WORD_COUNT_H_ */
+#include <ctype.h>
+#include <string.h>

@@ -5,27 +5,32 @@
 //Dependencies: NA
 //Throws: NA
 
-#include <ctype.h>
-#include <string.h>
+#include "Word_Count.h"
 
-int count_words(char *input){
+int ROWS;
+int COLS;
+
+int word_count(const char input[ROWS][COLS], const int rows, const int cols){
 
 	int words = 0;
 
-	for (int i = strlen(input)-1; i > 0; i--) {
+	for (int r = 0; r < rows; r++){
+	    words++;//count first word of every new line
+		for (int c = 0; c < cols; c++){
+			if (isblank(input[r][c])){
+			    if (isalnum(input[r][c-1]) || isalnum(input[r][c+1])){
+			        words++;
 
-		if (isblank(input[i]) && (isalpha(input[i-1]) || ispunct(input[i-1]))){//if blank space is found and element before it was a letter or punctuation symbol
-			words++;
+			        }//end inner if
 
 
-		}//end if
 
+			}//end if
+
+		}//end inner for
 
 	}//end for
 
-	words++; //(count last word)
 
 	return words;
-
-
-}//end count_words
+}//end function

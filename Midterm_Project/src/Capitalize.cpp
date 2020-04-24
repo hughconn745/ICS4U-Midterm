@@ -5,7 +5,7 @@
 //Dependencies: NA
 //Throws: NA
 
-#include <capitalize.h>
+#include "Capitalize.h"
 
 int ROWS;
 int COLS;
