@@ -6,6 +6,7 @@
 //Throws: NA
 
 #include "Word_Count.h"
+#include "Main.h"
 
 int ROWS;
 int COLS;

@@ -6,6 +6,7 @@
 //Throws: NA
 
 #include "Capitalize.h"
+#include "Main.h"
 
 int ROWS;
 int COLS;

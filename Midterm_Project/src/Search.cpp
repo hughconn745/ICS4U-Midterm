@@ -6,7 +6,7 @@
 //Throws: NA
 
 #include "Search.h"
-
+#include "Main.h"
 
 int COLS;
 
