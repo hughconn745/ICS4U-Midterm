@@ -7,3 +7,6 @@
 
 
 #endif /* CAPITALIZE_H_ */
+
+#include <cstring>
+#include <ctype.h>

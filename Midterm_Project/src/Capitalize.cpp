@@ -5,38 +5,67 @@
 //Dependencies: NA
 //Throws: NA
 
-#include <ctype.h>
+#include <capitalize.h>
 
-void sentence_case(char *input){
+int ROWS;
+int COLS;
 
-	if (isalpha(input[0])){//capitalize first letter in input if it is a letter
-		input[0] = toupper(input[0]);
+void capitalize(char input[ROWS][COLS], int rows, int cols){
+	int tempR = 0;
+	int tempC = 0;
 
+	int i = 0;
 
-	}//end if
+	int j = 0;
 
-	for(int x = 0; input[x] != '\0'; x++){
+	while (i < rows && j < cols){
 
-		if (input[x] == '.' && input[x+2] != '\0'){
-			if (input[x + 1] != 0x20 && isalpha(input[x+1])){ //if user didn't put a space between period of previous sentence and beginning of new sentence AND next element is a letter
-				input[x+1] = toupper(input[x+1]); //capitalize the first letter of the new sentence anyway
-
-			} else {
-				if (isalpha(input[x+2])){
-
-					input[x+2] = toupper(input[x+2]); //capitalize first letter after the space after a period
-
-				}//end inner inner if
-
-
+		if ((i == 0 && j == 0) || (input[i][j] == '!' || input[i][j] == '.' || input[i][j] == '?')){
+			if (isalpha(input[i][j])){
+				input[i][j] = toupper(input[i][j]);
 
 
 			}//end inner if
+			else{
+				tempR = i;
+				tempC = j;
+				while(tempR < rows && tempC < cols){
+					if (isalpha(input[tempR][tempC])){
+						input[tempR][tempC] = toupper(input[tempR][tempC]);
+						i = tempR;
+						j = tempC;
+						break;
 
-		}//end outer if
+					}//end inner inner if
+					else{
+						tempC++;
+						if (tempC == (cols -1 ) && !(isalpha(input[tempR][tempC]))){
+							tempC = 0;
+							tempR++;
+						}//end inner inner inner if
 
 
-	}//end for
+					}//end inner inner else
+				}//end inner while
 
 
-}//end sentence_case
+			}//end inner else
+
+
+		}//end if
+
+		if ((j+1) < cols){
+			j++;
+
+		}//end if
+		else{
+			j=0;
+			i++;
+
+		}//end else
+
+
+	}//end while
+
+
+}//end function
