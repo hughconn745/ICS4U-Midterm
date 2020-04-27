@@ -7,8 +7,6 @@
 #include "Word_Count.h"
 
 
-using namespace std;
-
 int para_size = 1;
 int ARRAY_LENGTH = 30;
 char ** array = new char*[para_size + 1];
