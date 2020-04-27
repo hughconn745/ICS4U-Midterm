@@ -1,0 +1,5 @@
+
+
+void replaceWord(char ** input, int * keyphrase, char * newChar) {
+
+}

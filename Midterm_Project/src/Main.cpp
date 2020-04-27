@@ -1,16 +1,20 @@
-#include <stdio.h> //scanf, fflush, etc.
-#include <iostream>
 #include "Main.h"
 #include "Array_Resize.h"
 #include "Replace.h"
 #include "Clipboard_Output.h"
+#include "Capitalize.h"
+#include "Search.h"
+#include "Word_Count.h"
+
 
 using namespace std;
 
 int para_size = 1;
 int ARRAY_LENGTH = 30;
 char ** array = new char*[para_size + 1];
-
+char * select = new char[11];
+char * keywordBuffer = new char[ARRAY_LENGTH];
+char * replaceBuffer = new char[ARRAY_LENGTH];
 int main() {
 	array[0] = new char[30];
 	array[1] = new char[30];
@@ -23,32 +27,76 @@ int main() {
 
 	int k = 0;
 
+	do {
 
+		if(fgets(array[k], 28, stdin) == NULL) {
+			return 1;
+		}
 
+		if(k == para_size - 1)
+			growArray(para_size + 1);
 
-while(k < 5) {
+		k++;
+		para_size++;
 
-	if(fgets(array[k], 28, stdin) == NULL) {
-		return 1;
-	}
+	} while(strncmp(array[k - 1], "end", 3) != 0);
 
-	if(k == para_size - 1)
-		growArray(para_size + 1);
+	do {
+		cout << "Please enter one of the following commands:\n" << "-> replace\n-> search\n-> capitalize\n-> wordcount\n-> copy\n-> quit" << endl;
 
-	k++;
-	para_size++;
+		if(fgets(select, 10, stdin) == NULL) {
+					return 1;
+				}
 
-	cout << k << " : " << para_size << endl;
-}
+		if(strncmp(select, "replace", 7) != 0) {
 
-	cout << "Printing Paragraph contents" << endl;
+			cout << "Please input the word you wish to replace" << endl;
 
-	for(int j = 0; j < k; j++)
-		fputs(array[j], stdout);
+			if(fgets(keywordBuffer, 28, stdin) == NULL) {
+				return 1;
+			}
 
-	outputToClipboard(array);
+			cout << "Please input the word you wish to replace the first word" << endl;
 
-	return 0;
+			if(fgets(replaceBuffer, 28, stdin) == NULL) {
+				return 1;
+			}
 
+			replaceWord(array, keywordBuffer, replaceBuffer);
+			continue;
+		}
+
+		if(strncmp(select, "search", 6) != 0) {
+
+			cout << "Please input the word you wish to search for" << endl;
+
+			if(fgets(keywordBuffer, 28, stdin) == NULL) {
+				return 1;
+			}
+
+			search(array, keywordBuffer, para_size - 1, ARRAY_LENGTH);
+
+			continue;
+		}
+
+		if(strncmp(select, "capitalize", 10) != 0) {
+			capitalize(array, para_size - 1, ARRAY_LENGTH);
+			continue;
+		}
+
+		if(strncmp(select, "wordcount", 9) != 0) {
+			word_count(array, para_size - 1, ARRAY_LENGTH);
+			continue;
+		}
+
+		if(strncmp(select, "copy", 4) != 0) {
+			outputToClipboard(array);
+			continue;
+		}
+
+		cout << "Error: Unrecognized command" << endl;
+
+	} while(strncmp(select, "quit", 4) != 0);
+	cout << "quitting..." << endl;
 
 }

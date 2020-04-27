@@ -8,10 +8,8 @@
 #include "Word_Count.h"
 #include "Main.h"
 
-int ROWS;
-int COLS;
 
-int word_count(const char input[ROWS][COLS], const int rows, const int cols){
+int word_count(char ** input, const int rows, const int cols){
 
 	int words = 0;
 

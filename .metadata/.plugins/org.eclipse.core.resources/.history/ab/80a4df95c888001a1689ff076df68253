@@ -1,0 +1,5 @@
+#include <string.h>
+
+extern char ** array;
+extern int ARRAY_LENGTH;
+extern int para_size;

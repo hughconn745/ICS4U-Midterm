@@ -2,17 +2,15 @@
 #include <iostream>
 #include <string.h>
 #include "Main.h"
-
+#include "Clipboard_Output.h"
 using namespace std;
 
 void outputToClipboard(char ** array) {
-    char* output = new char[ARRAY_LENGTH * para_size];
+    char* output = new char[ARRAY_LENGTH * (para_size - 1)];
 
-    cout << output << endl;
-
-    for(int i = 0; i < para_size; i++) {
-    	strncat(output, array[i], ARRAY_LENGTH);
-    	//cout << output << endl;
+    output[0] = '\0';
+    for(int i = 0; i < para_size - 1; i++) {
+    	strncat(output, array[i], ARRAY_LENGTH - 1);
     }
 
     const size_t len = strlen(output) + 1;

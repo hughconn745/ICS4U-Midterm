@@ -1,0 +1,3 @@
+void replaceWord(char ** input, int * keyphrase, char * newChar);
+
+int end = -1;

@@ -1614,3 +1614,1303 @@ g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capital
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
 g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Compare_Each.o" "src\\Is_Empty.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+20:20:48 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Compare_Each.o" "src\\Is_Empty.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+15:33:56 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Compare_Each.o" "src\\Is_Empty.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+15:34:56 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+src\Search.o: In function `Z6searchPcS_Pi':
+F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Search.cpp:21: undefined reference to `compare_each(char*, char*, int, int)'
+collect2.exe: error: ld returned 1 exit status
+15:35:31 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+src\Search.o: In function `Z6searchPcS_Pi':
+F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Search.cpp:21: undefined reference to `compare_each(char*, char*, int, int)'
+collect2.exe: error: ld returned 1 exit status
+15:35:54 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+src\Search.o: In function `Z6searchPcS_Pi':
+F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Search.cpp:21: undefined reference to `compare_each(char*, char*, int, int)'
+collect2.exe: error: ld returned 1 exit status
+15:35:58 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+src\Search.o: In function `Z6searchPcS_Pi':
+F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Search.cpp:21: undefined reference to `compare_each(char*, char*, int, int)'
+collect2.exe: error: ld returned 1 exit status
+15:38:07 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+src\Search.o: In function `Z6searchPcS_Pi':
+F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Search.cpp:21: undefined reference to `compare_each(char*, char*, int, int)'
+collect2.exe: error: ld returned 1 exit status
+16:57:13 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+src\Search.o: In function `Z6searchPcS_Pi':
+F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Search.cpp:21: undefined reference to `compare_each(char*, char*, int, int)'
+collect2.exe: error: ld returned 1 exit status
+16:59:01 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp:13:36: error: array bound is not an integer constant before ']' token
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                    ^
+..\src\Search.cpp:13:37: error: expected ')' before ',' token
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                     ^
+..\src\Search.cpp:13:39: error: expected unqualified-id before 'const'
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                       ^~~~~
+16:59:14 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp:13:36: error: array bound is not an integer constant before ']' token
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                    ^
+..\src\Search.cpp:13:37: error: expected ')' before ',' token
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                     ^
+..\src\Search.cpp:13:39: error: expected unqualified-id before 'const'
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                       ^~~~~
+16:59:30 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp:13:36: error: array bound is not an integer constant before ']' token
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                    ^
+..\src\Search.cpp:13:37: error: expected ')' before ',' token
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                     ^
+..\src\Search.cpp:13:39: error: expected unqualified-id before 'const'
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                       ^~~~~
+17:19:09 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+In file included from ..\src\Search.cpp:8:0:
+..\src\Search.h:14:32: error: 'COLS' was not declared in this scope
+ void search(const char input[][COLS], const char find[], int rows, int cols);
+                                ^~~~
+..\src\Search.h:14:37: error: expected ')' before ',' token
+ void search(const char input[][COLS], const char find[], int rows, int cols);
+                                     ^
+..\src\Search.h:14:39: error: expected unqualified-id before 'const'
+ void search(const char input[][COLS], const char find[], int rows, int cols);
+                                       ^~~~~
+..\src\Search.cpp:13:36: error: array bound is not an integer constant before ']' token
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                    ^
+..\src\Search.cpp:13:37: error: expected ')' before ',' token
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                     ^
+..\src\Search.cpp:13:39: error: expected unqualified-id before 'const'
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                       ^~~~~
+17:19:36 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp:13:36: error: array bound is not an integer constant before ']' token
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                    ^
+..\src\Search.cpp:13:37: error: expected ')' before ',' token
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                     ^
+..\src\Search.cpp:13:39: error: expected unqualified-id before 'const'
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                       ^~~~~
+14:48:22 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp:13:36: error: array bound is not an integer constant before ']' token
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                    ^
+..\src\Search.cpp:13:37: error: expected ')' before ',' token
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                     ^
+..\src\Search.cpp:13:39: error: expected unqualified-id before 'const'
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                       ^~~~~
+14:54:19 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp:13:32: error: declaration of 'input' as multidimensional array must have bounds for all dimensions except the first
+ void search(const char input[][], const char find[], int rows, int cols){
+                                ^
+..\src\Search.cpp:13:33: error: expected ')' before ',' token
+ void search(const char input[][], const char find[], int rows, int cols){
+                                 ^
+..\src\Search.cpp:13:35: error: expected unqualified-id before 'const'
+ void search(const char input[][], const char find[], int rows, int cols){
+                                   ^~~~~
+14:55:56 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp:18:36: error: array bound is not an integer constant before ']' token
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                    ^
+..\src\Search.cpp:18:37: error: expected ')' before ',' token
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                     ^
+..\src\Search.cpp:18:39: error: expected unqualified-id before 'const'
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                       ^~~~~
+14:56:15 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp:13:36: error: array bound is not an integer constant before ']' token
+ void search(const char input[][COLS],  char find[], int rows, int cols){
+                                    ^
+..\src\Search.cpp:13:37: error: expected ')' before ',' token
+ void search(const char input[][COLS],  char find[], int rows, int cols){
+                                     ^
+..\src\Search.cpp:13:40: error: expected unqualified-id before 'char'
+ void search(const char input[][COLS],  char find[], int rows, int cols){
+                                        ^~~~
+14:56:43 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp:13:36: error: array bound is not an integer constant before ']' token
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                    ^
+..\src\Search.cpp:13:37: error: expected ')' before ',' token
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                     ^
+..\src\Search.cpp:13:39: error: expected unqualified-id before 'const'
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                       ^~~~~
+14:58:12 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+Info: Nothing to build for Midterm_Project
+15:00:01 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+15:02:14 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+15:03:36 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+15:04:25 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+15:07:43 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+Info: Nothing to build for Midterm_Project
+Info: Nothing to build for Midterm_Project
+15:09:10 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+15:11:03 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+Info: Nothing to build for Midterm_Project
+15:12:47 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+15:13:12 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+15:23:47 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+15:25:24 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+15:26:40 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+Info: Nothing to build for Midterm_Project
+15:27:43 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+15:28:50 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+15:29:59 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+15:30:28 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+15:33:06 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp:13:36: error: array bound is not an integer constant before ']' token
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                    ^
+..\src\Search.cpp:13:37: error: expected ')' before ',' token
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                     ^
+..\src\Search.cpp:13:39: error: expected unqualified-id before 'const'
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                       ^~~~~
+15:33:57 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp:13:36: error: array bound is not an integer constant before ']' token
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                    ^
+..\src\Search.cpp:13:37: error: expected ')' before ',' token
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                     ^
+..\src\Search.cpp:13:39: error: expected unqualified-id before 'const'
+ void search(const char input[][COLS], const char find[], int rows, int cols){
+                                       ^~~~~
+15:34:13 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+16:27:32 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp:11:44: error: array bound is not an integer constant before ']' token
+ void search(const char input[][ARRAY_LENGTH], const char find[], int rows, int cols){
+                                            ^
+..\src\Search.cpp:11:45: error: expected ')' before ',' token
+ void search(const char input[][ARRAY_LENGTH], const char find[], int rows, int cols){
+                                             ^
+..\src\Search.cpp:11:47: error: expected unqualified-id before 'const'
+ void search(const char input[][ARRAY_LENGTH], const char find[], int rows, int cols){
+                                               ^~~~~
+16:28:05 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Word_Count.o" "..\\src\\Word_Count.cpp" 
+..\src\Word_Count.cpp:14:37: error: array bound is not an integer constant before ']' token
+ int word_count(const char input[ROWS][COLS], const int rows, const int cols){
+                                     ^
+..\src\Word_Count.cpp:14:43: error: array bound is not an integer constant before ']' token
+ int word_count(const char input[ROWS][COLS], const int rows, const int cols){
+                                           ^
+..\src\Word_Count.cpp:14:44: error: expected ')' before ',' token
+ int word_count(const char input[ROWS][COLS], const int rows, const int cols){
+                                            ^
+..\src\Word_Count.cpp:14:46: error: expected unqualified-id before 'const'
+ int word_count(const char input[ROWS][COLS], const int rows, const int cols){
+                                              ^~~~~
+16:30:18 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Capitalize.o" "..\\src\\Capitalize.cpp" 
+..\src\Capitalize.cpp:14:32: error: array bound is not an integer constant before ']' token
+ void capitalize(char input[ROWS][COLS], int rows, int cols){
+                                ^
+..\src\Capitalize.cpp:14:38: error: array bound is not an integer constant before ']' token
+ void capitalize(char input[ROWS][COLS], int rows, int cols){
+                                      ^
+..\src\Capitalize.cpp:14:39: error: expected ')' before ',' token
+ void capitalize(char input[ROWS][COLS], int rows, int cols){
+                                       ^
+..\src\Capitalize.cpp:14:41: error: expected unqualified-id before 'int'
+ void capitalize(char input[ROWS][COLS], int rows, int cols){
+                                         ^~~
+16:30:58 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Word_Count.o" "..\\src\\Word_Count.cpp" 
+..\src\Word_Count.cpp:11:46: error: array bound is not an integer constant before ']' token
+ int word_count(const char input[para_size - 1][ARRAY_LENGTH], const int rows, const int cols){
+                                              ^
+..\src\Word_Count.cpp:11:60: error: array bound is not an integer constant before ']' token
+ int word_count(const char input[para_size - 1][ARRAY_LENGTH], const int rows, const int cols){
+                                                            ^
+..\src\Word_Count.cpp:11:61: error: expected ')' before ',' token
+ int word_count(const char input[para_size - 1][ARRAY_LENGTH], const int rows, const int cols){
+                                                             ^
+..\src\Word_Count.cpp:11:63: error: expected unqualified-id before 'const'
+ int word_count(const char input[para_size - 1][ARRAY_LENGTH], const int rows, const int cols){
+                                                               ^~~~~
+16:31:21 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp:11:44: error: array bound is not an integer constant before ']' token
+ void search(const char input[][ARRAY_LENGTH], const char find[], int rows, int cols){
+                                            ^
+..\src\Search.cpp:11:45: error: expected ')' before ',' token
+ void search(const char input[][ARRAY_LENGTH], const char find[], int rows, int cols){
+                                             ^
+..\src\Search.cpp:11:47: error: expected unqualified-id before 'const'
+ void search(const char input[][ARRAY_LENGTH], const char find[], int rows, int cols){
+                                               ^~~~~
+16:32:01 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+..\src\Main.cpp:11:11: error: conflicting declaration 'const int ARRAY_LENGTH'
+ const int ARRAY_LENGTH = 30;
+           ^~~~~~~~~~~~
+In file included from ..\src\Main.cpp:3:0:
+..\src\Main.h:14:12: note: previous declaration as 'int ARRAY_LENGTH'
+ extern int ARRAY_LENGTH;
+            ^~~~~~~~~~~~
+16:32:19 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp:11:44: error: array bound is not an integer constant before ']' token
+ void search(const char input[][ARRAY_LENGTH], const char find[], int rows, int cols){
+                                            ^
+..\src\Search.cpp:11:45: error: expected ')' before ',' token
+ void search(const char input[][ARRAY_LENGTH], const char find[], int rows, int cols){
+                                             ^
+..\src\Search.cpp:11:47: error: expected unqualified-id before 'const'
+ void search(const char input[][ARRAY_LENGTH], const char find[], int rows, int cols){
+                                               ^~~~~
+16:33:06 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Word_Count.o" "..\\src\\Word_Count.cpp" 
+..\src\Word_Count.cpp:11:46: error: array bound is not an integer constant before ']' token
+ int word_count(const char input[para_size - 1][ARRAY_LENGTH], const int rows, const int cols){
+                                              ^
+..\src\Word_Count.cpp:11:60: error: array bound is not an integer constant before ']' token
+ int word_count(const char input[para_size - 1][ARRAY_LENGTH], const int rows, const int cols){
+                                                            ^
+..\src\Word_Count.cpp:11:61: error: expected ')' before ',' token
+ int word_count(const char input[para_size - 1][ARRAY_LENGTH], const int rows, const int cols){
+                                                             ^
+..\src\Word_Count.cpp:11:63: error: expected unqualified-id before 'const'
+ int word_count(const char input[para_size - 1][ARRAY_LENGTH], const int rows, const int cols){
+                                                               ^~~~~
+16:33:49 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Word_Count.o" "..\\src\\Word_Count.cpp" 
+..\src\Word_Count.cpp:13:46: error: array bound is not an integer constant before ']' token
+ int word_count(const char input[para_size - 1][COLS], const int rows, const int cols){
+                                              ^
+..\src\Word_Count.cpp:13:52: error: array bound is not an integer constant before ']' token
+ int word_count(const char input[para_size - 1][COLS], const int rows, const int cols){
+                                                    ^
+..\src\Word_Count.cpp:13:53: error: expected ')' before ',' token
+ int word_count(const char input[para_size - 1][COLS], const int rows, const int cols){
+                                                     ^
+..\src\Word_Count.cpp:13:55: error: expected unqualified-id before 'const'
+ int word_count(const char input[para_size - 1][COLS], const int rows, const int cols){
+                                                       ^~~~~
+16:34:11 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Capitalize.o" "..\\src\\Capitalize.cpp" 
+..\src\Capitalize.cpp:11:41: error: array bound is not an integer constant before ']' token
+ void capitalize(char input[para_size - 1][ARRAY_LENGTH], int rows, int cols){
+                                         ^
+..\src\Capitalize.cpp:11:55: error: array bound is not an integer constant before ']' token
+ void capitalize(char input[para_size - 1][ARRAY_LENGTH], int rows, int cols){
+                                                       ^
+..\src\Capitalize.cpp:11:56: error: expected ')' before ',' token
+ void capitalize(char input[para_size - 1][ARRAY_LENGTH], int rows, int cols){
+                                                        ^
+..\src\Capitalize.cpp:11:58: error: expected unqualified-id before 'int'
+ void capitalize(char input[para_size - 1][ARRAY_LENGTH], int rows, int cols){
+                                                          ^~~
+16:34:20 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Word_Count.o" "..\\src\\Word_Count.cpp" 
+..\src\Word_Count.cpp:12:47: error: array bound is not an integer constant before ']' token
+ int word_count(const char input[][ARRAY_LENGTH], const int rows, const int cols){
+                                               ^
+..\src\Word_Count.cpp:12:48: error: expected ')' before ',' token
+ int word_count(const char input[][ARRAY_LENGTH], const int rows, const int cols){
+                                                ^
+..\src\Word_Count.cpp:12:50: error: expected unqualified-id before 'const'
+ int word_count(const char input[][ARRAY_LENGTH], const int rows, const int cols){
+                                                  ^~~~~
+16:34:53 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Word_Count.o" "..\\src\\Word_Count.cpp" 
+..\src\Word_Count.cpp:12:47: error: array bound is not an integer constant before ']' token
+ int word_count(const char input[][ARRAY_LENGTH], const int rows, const int cols){
+                                               ^
+..\src\Word_Count.cpp:12:48: error: expected ')' before ',' token
+ int word_count(const char input[][ARRAY_LENGTH], const int rows, const int cols){
+                                                ^
+..\src\Word_Count.cpp:12:50: error: expected unqualified-id before 'const'
+ int word_count(const char input[][ARRAY_LENGTH], const int rows, const int cols){
+                                                  ^~~~~
+16:35:39 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Capitalize.o" "..\\src\\Capitalize.cpp" 
+..\src\Capitalize.cpp:11:42: error: array bound is not an integer constant before ']' token
+ void capitalize(char input[][ARRAY_LENGTH], int rows, int cols){
+                                          ^
+..\src\Capitalize.cpp:11:43: error: expected ')' before ',' token
+ void capitalize(char input[][ARRAY_LENGTH], int rows, int cols){
+                                           ^
+..\src\Capitalize.cpp:11:45: error: expected unqualified-id before 'int'
+ void capitalize(char input[][ARRAY_LENGTH], int rows, int cols){
+                                             ^~~
+16:36:11 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Capitalize.o" "..\\src\\Capitalize.cpp" 
+..\src\Capitalize.cpp:11:42: error: array bound is not an integer constant before ']' token
+ void capitalize(char input[][ARRAY_LENGTH], int rows, int cols){
+                                          ^
+..\src\Capitalize.cpp:11:43: error: expected ')' before ',' token
+ void capitalize(char input[][ARRAY_LENGTH], int rows, int cols){
+                                           ^
+..\src\Capitalize.cpp:11:45: error: expected unqualified-id before 'int'
+ void capitalize(char input[][ARRAY_LENGTH], int rows, int cols){
+                                             ^~~
+16:38:03 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp:11:44: error: array bound is not an integer constant before ']' token
+ void search(const char input[][ARRAY_LENGTH], const char find[], int rows, int cols){
+                                            ^
+..\src\Search.cpp:11:45: error: expected ')' before ',' token
+ void search(const char input[][ARRAY_LENGTH], const char find[], int rows, int cols){
+                                             ^
+..\src\Search.cpp:11:47: error: expected unqualified-id before 'const'
+ void search(const char input[][ARRAY_LENGTH], const char find[], int rows, int cols){
+                                               ^~~~~
+16:38:17 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Word_Count.o" "..\\src\\Word_Count.cpp" 
+..\src\Word_Count.cpp:12:47: error: array bound is not an integer constant before ']' token
+ int word_count(const char input[][ARRAY_LENGTH], const int rows, const int cols){
+                                               ^
+..\src\Word_Count.cpp:12:48: error: expected ')' before ',' token
+ int word_count(const char input[][ARRAY_LENGTH], const int rows, const int cols){
+                                                ^
+..\src\Word_Count.cpp:12:50: error: expected unqualified-id before 'const'
+ int word_count(const char input[][ARRAY_LENGTH], const int rows, const int cols){
+                                                  ^~~~~
+16:38:30 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Word_Count.o" "..\\src\\Word_Count.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Capitalize.o" "..\\src\\Capitalize.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+16:46:04 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
+..\src\Array_Resize.cpp: In function 'void growArray(int)':
+..\src\Array_Resize.cpp:4:30: error: 'para_size' was not declared in this scope
+  char ** buffer = new char *[para_size];
+                              ^~~~~~~~~
+..\src\Array_Resize.cpp:7:22: error: 'ARRAY_LENGTH' was not declared in this scope
+   for(int j = 0; j < ARRAY_LENGTH; j++)
+                      ^~~~~~~~~~~~
+..\src\Array_Resize.cpp:8:16: error: 'array' was not declared in this scope
+    buffer[i] = array[i];
+                ^~~~~
+..\src\Array_Resize.cpp:11:2: error: 'array' was not declared in this scope
+  array = new char *[new_size];
+  ^~~~~
+..\src\Array_Resize.cpp:14:23: error: 'ARRAY_LENGTH' was not declared in this scope
+   array[i] = new char[ARRAY_LENGTH];
+                       ^~~~~~~~~~~~
+..\src\Array_Resize.cpp:18:22: error: 'ARRAY_LENGTH' was not declared in this scope
+   for(int j = 0; j < ARRAY_LENGTH; j++)
+                      ^~~~~~~~~~~~
+..\src\Array_Resize.cpp: In function 'void shrinkArray(int)':
+..\src\Array_Resize.cpp:29:30: error: 'para_size' was not declared in this scope
+  char ** buffer = new char *[para_size];
+                              ^~~~~~~~~
+..\src\Array_Resize.cpp:32:26: error: 'ARRAY_LENGTH' was not declared in this scope
+    buffer[i]  = new char[ARRAY_LENGTH];
+                          ^~~~~~~~~~~~
+..\src\Array_Resize.cpp:37:22: error: 'ARRAY_LENGTH' was not declared in this scope
+   for(int j = 0; j < ARRAY_LENGTH; j++)
+                      ^~~~~~~~~~~~
+..\src\Array_Resize.cpp:38:16: error: 'array' was not declared in this scope
+    buffer[i] = array[i];
+                ^~~~~
+..\src\Array_Resize.cpp:41:2: error: 'array' was not declared in this scope
+  array = new char *[new_size];
+  ^~~~~
+..\src\Array_Resize.cpp:44:23: error: 'ARRAY_LENGTH' was not declared in this scope
+   array[i] = new char[ARRAY_LENGTH];
+                       ^~~~~~~~~~~~
+..\src\Array_Resize.cpp:48:22: error: 'ARRAY_LENGTH' was not declared in this scope
+   for(int j = 0; j < ARRAY_LENGTH; j++)
+                      ^~~~~~~~~~~~
+16:46:40 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+In file included from ..\src\Array_Resize.h:4:0,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Main.cpp:4:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstring:41:28: error: #include nested too deeply
+ #include <bits/c++config.h>
+                            ^
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstring:42:20: error: #include nested too deeply
+ #include <string.h>
+                    ^
+In file included from ..\src\Array_Resize.h:7:0,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Array_Resize.h:7,
+                 from ..\src\Main.cpp:4:
+..\src\Array_Resize.h:1:41: error: #include nested too deeply
+ #include <stdio.h> //scanf, fflush, etc.
+                                         ^
+..\src\Array_Resize.h:2:41: error: #include nested too deeply
+ #include <ctype.h> //for comparing chars
+                                         ^
+..\src\Array_Resize.h:3:50: error: #include nested too deeply
+ #include <string.h> //string processing functions
+                                                  ^
+..\src\Array_Resize.h:4:19: error: #include nested too deeply
+ #include <cstring>
+                   ^
+..\src\Array_Resize.h:5:20: error: #include nested too deeply
+ #include <iostream>
+                    ^
+..\src\Array_Resize.h:6:18: error: #include nested too deeply
+ #include "Main.h"
+                  ^
+..\src\Array_Resize.h:7:26: error: #include nested too deeply
+ #include "Array_Resize.h"
+                          ^
+16:46:56 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+16:48:26 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Capitalize.o" "..\\src\\Capitalize.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Word_Count.o" "..\\src\\Word_Count.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+16:54:36 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Word_Count.o" "..\\src\\Word_Count.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Capitalize.o" "..\\src\\Capitalize.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+src\Replace.o:Replace.cpp:(.data+0x0): multiple definition of `end'
+src\Main.o:Main.cpp:(.data+0x0): first defined here
+collect2.exe: error: ld returned 1 exit status
+16:54:58 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+src\Replace.o:Replace.cpp:(.data+0x0): multiple definition of `end'
+src\Main.o:Main.cpp:(.data+0x0): first defined here
+collect2.exe: error: ld returned 1 exit status
+16:56:35 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+16:58:12 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+16:58:46 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+16:59:17 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+17:01:05 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:02:07 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:03:11 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:07:26 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+..\src\Main.cpp:13:29: error: cannot convert 'char**' to 'char*' in initialization
+ char * select = new char*[11];
+                             ^
+..\src\Main.cpp: In function 'int main()':
+..\src\Main.cpp:50:16: error: switch quantity not an integer
+   switch(select) {
+                ^
+..\src\Main.cpp:52:8: error: could not convert '"replace"' from 'const char [8]' to '<type error>'
+   case "replace":
+        ^~~~~~~~~
+17:07:43 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+..\src\Main.cpp: In function 'int main()':
+..\src\Main.cpp:50:16: error: switch quantity not an integer
+   switch(select) {
+                ^
+..\src\Main.cpp:52:8: error: could not convert '"replace"' from 'const char [8]' to '<type error>'
+   case "replace":
+        ^~~~~~~~~
+17:10:56 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:11:44 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:12:10 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:12:35 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:13:10 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:37:52 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Capitalize.o" "..\\src\\Capitalize.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:39:00 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:39:26 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:40:06 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Capitalize.o" "..\\src\\Capitalize.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Word_Count.o" "..\\src\\Word_Count.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:40:53 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:42:47 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+..\src\Main.cpp: In function 'int main()':
+..\src\Main.cpp:62:49: error: 'word_count' was not declared in this scope
+    word_count(array, para_size - 1, ARRAY_LENGTH);
+                                                 ^
+17:46:30 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+..\src\Main.cpp: In function 'int main()':
+..\src\Main.cpp:56:60: error: invalid conversion from 'char**' to 'const char**' [-fpermissive]
+    search(array, keywordBuffer, para_size - 1, ARRAY_LENGTH);
+                                                            ^
+In file included from ..\src\Main.cpp:6:0:
+..\src\Search.h:8:6: note:   initializing argument 1 of 'void search(const char**, const char*, int, int)'
+ void search(const char ** input, const char find[], int rows, int cols);
+      ^~~~~~
+..\src\Main.cpp:66:49: error: invalid conversion from 'char**' to 'const char**' [-fpermissive]
+    word_count(array, para_size - 1, ARRAY_LENGTH);
+                                                 ^
+In file included from ..\src\Main.cpp:7:0:
+..\src\Word_Count.h:4:5: note:   initializing argument 1 of 'int word_count(const char**, int, int)'
+ int word_count(const char ** input, const int rows, const int cols);
+     ^~~~~~~~~~
+17:47:41 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Word_Count.o" "..\\src\\Word_Count.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+src\Main.o: In function `main':
+F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Main.cpp:56: undefined reference to `search(char**, char const*, int, int)'
+F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Main.cpp:66: undefined reference to `word_count(char**, int, int)'
+collect2.exe: error: ld returned 1 exit status
+17:48:06 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+..\src\Main.cpp: In function 'int main()':
+..\src\Main.cpp:56:60: error: 'search' was not declared in this scope
+    search(array, keywordBuffer, para_size - 1, ARRAY_LENGTH);
+                                                            ^
+..\src\Main.cpp:66:49: error: 'word_count' was not declared in this scope
+    word_count(array, para_size - 1, ARRAY_LENGTH);
+                                                 ^
+17:48:44 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+..\src\Main.cpp: In function 'int main()':
+..\src\Main.cpp:56:60: error: invalid conversion from 'char**' to 'const char**' [-fpermissive]
+    search(array, keywordBuffer, para_size - 1, ARRAY_LENGTH);
+                                                            ^
+In file included from ..\src\Main.cpp:6:0:
+..\src\Search.h:8:6: note:   initializing argument 1 of 'void search(const char**, const char*, int, int)'
+ void search(const char ** input, const char find[], int rows, int cols);
+      ^~~~~~
+17:49:53 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+..\src\Main.cpp: In function 'int main()':
+..\src\Main.cpp:56:60: error: invalid conversion from 'char**' to 'const char**' [-fpermissive]
+    search(array, keywordBuffer, para_size - 1, ARRAY_LENGTH);
+                                                            ^
+In file included from ..\src\Main.cpp:6:0:
+..\src\Search.h:8:6: note:   initializing argument 1 of 'void search(const char**, const char*, int, int)'
+ void search(const char ** input, const char find[], int rows, int cols);
+      ^~~~~~
+17:50:40 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Word_Count.o" "..\\src\\Word_Count.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+src\Main.o: In function `main':
+F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Main.cpp:56: undefined reference to `search(char**, char const*, int, int)'
+F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Main.cpp:66: undefined reference to `word_count(char**, int, int)'
+collect2.exe: error: ld returned 1 exit status
+17:51:20 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Word_Count.o" "..\\src\\Word_Count.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+..\src\Main.cpp: In function 'int main()':
+..\src\Main.cpp:56:60: error: invalid conversion from 'char**' to 'const char**' [-fpermissive]
+    search(array, keywordBuffer, para_size - 1, ARRAY_LENGTH);
+                                                            ^
+In file included from ..\src\Main.cpp:6:0:
+..\src\Search.cpp:11:6: note:   initializing argument 1 of 'void search(const char**, const char*, int, int)'
+ void search(const char ** input, const char find[], int rows, int cols){
+      ^~~~~~
+..\src\Main.cpp:66:49: error: invalid conversion from 'char**' to 'const char**' [-fpermissive]
+    word_count(array, para_size - 1, ARRAY_LENGTH);
+                                                 ^
+In file included from ..\src\Main.cpp:7:0:
+..\src\Word_Count.cpp:12:5: note:   initializing argument 1 of 'int word_count(const char**, int, int)'
+ int word_count(const char ** input, const int rows, const int cols){
+     ^~~~~~~~~~
+17:54:36 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+..\src\Main.cpp: In function 'int main()':
+..\src\Main.cpp:65:51: error: cannot convert 'char*' to 'int*' for argument '2' to 'void replaceWord(char**, int*, char*)'
+    replaceWord(array, keywordBuffer, replaceBuffer);
+                                                   ^
+..\src\Main.cpp:77:60: error: invalid conversion from 'char**' to 'const char**' [-fpermissive]
+    search(array, keywordBuffer, para_size - 1, ARRAY_LENGTH);
+                                                            ^
+In file included from ..\src\Main.cpp:6:0:
+..\src\Search.cpp:11:6: note:   initializing argument 1 of 'void search(const char**, const char*, int, int)'
+ void search(const char ** input, const char find[], int rows, int cols){
+      ^~~~~~
+..\src\Main.cpp:88:49: error: invalid conversion from 'char**' to 'const char**' [-fpermissive]
+    word_count(array, para_size - 1, ARRAY_LENGTH);
+                                                 ^
+In file included from ..\src\Main.cpp:7:0:
+..\src\Word_Count.cpp:12:5: note:   initializing argument 1 of 'int word_count(const char**, int, int)'
+ int word_count(const char ** input, const int rows, const int cols){
+     ^~~~~~~~~~
+17:55:18 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+..\src\Main.cpp: In function 'int main()':
+..\src\Main.cpp:77:60: error: invalid conversion from 'char**' to 'const char**' [-fpermissive]
+    search(array, keywordBuffer, para_size - 1, ARRAY_LENGTH);
+                                                            ^
+In file included from ..\src\Main.cpp:6:0:
+..\src\Search.cpp:11:6: note:   initializing argument 1 of 'void search(const char**, const char*, int, int)'
+ void search(const char ** input, const char find[], int rows, int cols){
+      ^~~~~~
+..\src\Main.cpp:88:49: error: invalid conversion from 'char**' to 'const char**' [-fpermissive]
+    word_count(array, para_size - 1, ARRAY_LENGTH);
+                                                 ^
+In file included from ..\src\Main.cpp:7:0:
+..\src\Word_Count.cpp:12:5: note:   initializing argument 1 of 'int word_count(const char**, int, int)'
+ int word_count(const char ** input, const int rows, const int cols){
+     ^~~~~~~~~~
+17:55:42 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+..\src\Main.cpp: In function 'int main()':
+..\src\Main.cpp:77:11: error: expected primary-expression before 'const'
+    search(const array, keywordBuffer, para_size - 1, ARRAY_LENGTH);
+           ^~~~~
+..\src\Main.cpp:88:15: error: expected primary-expression before 'const'
+    word_count(const array, para_size - 1, ARRAY_LENGTH);
+               ^~~~~
+17:55:51 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+..\src\Main.cpp: In function 'int main()':
+..\src\Main.cpp:77:60: error: invalid conversion from 'char**' to 'const char**' [-fpermissive]
+    search(array, keywordBuffer, para_size - 1, ARRAY_LENGTH);
+                                                            ^
+In file included from ..\src\Main.cpp:6:0:
+..\src\Search.cpp:11:6: note:   initializing argument 1 of 'void search(const char**, const char*, int, int)'
+ void search(const char ** input, const char find[], int rows, int cols){
+      ^~~~~~
+..\src\Main.cpp:88:49: error: invalid conversion from 'char**' to 'const char**' [-fpermissive]
+    word_count(array, para_size - 1, ARRAY_LENGTH);
+                                                 ^
+In file included from ..\src\Main.cpp:7:0:
+..\src\Word_Count.cpp:12:5: note:   initializing argument 1 of 'int word_count(const char**, int, int)'
+ int word_count(const char ** input, const int rows, const int cols){
+     ^~~~~~~~~~
+17:56:26 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Word_Count.o" "..\\src\\Word_Count.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+src\Search.o: In function `Z6searchPPcPKcii':
+F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Search.cpp:11: multiple definition of `search(char**, char const*, int, int)'
+src\Main.o:F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Search.cpp:11: first defined here
+src\Word_Count.o: In function `Z10word_countPPcii':
+F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Word_Count.cpp:12: multiple definition of `word_count(char**, int, int)'
+src\Main.o:F:\Programming\Midterm 2020\Midterm_Project\Debug/../src/Word_Count.cpp:12: first defined here
+collect2.exe: error: ld returned 1 exit status
+17:57:48 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Word_Count.o" "..\\src\\Word_Count.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 

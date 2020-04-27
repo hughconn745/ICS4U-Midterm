@@ -1,0 +1,15 @@
+#include <stdio.h> //scanf, fflush, etc.
+#include <ctype.h> //for comparing chars
+#include <string.h> //string processing functions
+#include <cstring>
+#include <iostream>
+#include "Main.h"
+#include "Array_Resize.h"
+
+using namespace std;
+
+void growArray(int new_size);
+void shrinkArray(int new_size);
+
+
+

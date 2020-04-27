@@ -8,10 +8,7 @@
 #include "Capitalize.h"
 #include "Main.h"
 
-int ROWS;
-int COLS;
-
-void capitalize(char input[ROWS][COLS], int rows, int cols){
+void capitalize(char ** input, int rows, int cols){
 	int tempR = 0;
 	int tempC = 0;
 

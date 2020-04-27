@@ -1,0 +1,69 @@
+//Creator: Tahrima Rahman
+//Name: sentence_case
+//Description: capitalizes first word of every sentence in "input" parameter
+//Parameters: array of chars/ a string literal
+//Dependencies: NA
+//Throws: NA
+
+#include "Capitalize.h"
+#include "Main.h"
+
+void capitalize(char input[para_size - 1][ARRAY_LENGTH], int rows, int cols){
+	int tempR = 0;
+	int tempC = 0;
+
+	int i = 0;
+
+	int j = 0;
+
+	while (i < rows && j < cols){
+
+		if ((i == 0 && j == 0) || (input[i][j] == '!' || input[i][j] == '.' || input[i][j] == '?')){
+			if (isalpha(input[i][j])){
+				input[i][j] = toupper(input[i][j]);
+
+
+			}//end inner if
+			else{
+				tempR = i;
+				tempC = j;
+				while(tempR < rows && tempC < cols){
+					if (isalpha(input[tempR][tempC])){
+						input[tempR][tempC] = toupper(input[tempR][tempC]);
+						i = tempR;
+						j = tempC;
+						break;
+
+					}//end inner inner if
+					else{
+						tempC++;
+						if (tempC == (cols -1 ) && !(isalpha(input[tempR][tempC]))){
+							tempC = 0;
+							tempR++;
+						}//end inner inner inner if
+
+
+					}//end inner inner else
+				}//end inner while
+
+
+			}//end inner else
+
+
+		}//end if
+
+		if ((j+1) < cols){
+			j++;
+
+		}//end if
+		else{
+			j=0;
+			i++;
+
+		}//end else
+
+
+	}//end while
+
+
+}//end function

@@ -8,9 +8,7 @@
 #include "Search.h"
 #include "Main.h"
 
-int COLS;
-
-void search(const char input[][COLS], const char find[], int rows, int cols){
+void search(char ** input, const char find[], int rows, int cols){
 
 	int numFound = 0; //number of occurences of char find[] that were found in char input[][]
 	int wrdSize = 0; //number of letters in find[]

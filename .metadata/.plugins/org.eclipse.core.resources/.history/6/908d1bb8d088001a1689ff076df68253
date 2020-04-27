@@ -1,0 +1,4 @@
+#include <ctype.h>
+#include <string.h>
+
+int word_count(const char ** input, const int rows, const int cols);
