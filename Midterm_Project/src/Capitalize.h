@@ -1,5 +1,4 @@
-#include <cstring>
-#include <ctype.h>
 
 
-void capitalize(char ** input, int rows, int cols);
+//see "Capitalize.cpp for detailed information about method below
+void capitalize(char ** input, const int rows, const int cols);
