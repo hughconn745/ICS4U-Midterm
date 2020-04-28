@@ -26,21 +26,23 @@ int main() {
 	int k = 0;
 
 	do {
-
+		cout << "stage 1" << endl;
 		if(fgets(array[k], 28, stdin) == NULL) {
 			return 1;
 		}
-
-		if(k == para_size - 1)
+		cout << "stage 2" << endl;
+		if(k == para_size - 1) {
+			cout << "stage 2.5" << endl;
 			growArray(para_size + 1);
-
+		}
+		cout << "stage 3" << endl;
 		k++;
 		para_size++;
-
+		cout << "stage 4" << endl;
 	} while(strncmp(array[k - 1], "end", 3) != 0);
 
 	do {
-		cout << "Please enter one of the following commands:\n" << "-> replace\n-> search\n-> capitalize\n-> wordcount\n-> copy\n-> quit" << endl;
+		cout << "Please enter one of the following commands:\n" << "-> replace\n-> search\n-> capitalize\n-> wordcount\n-> copy\n-> print\n-> quit" << endl;
 
 		if(fgets(select, 10, stdin) == NULL) {
 					return 1;
@@ -92,6 +94,11 @@ int main() {
 			continue;
 		}
 
+		if(strncmp(select, "print", 5) != 0) {
+			for(int i = 0; i < para_size - 1; i++)
+				cout << array[i];
+			continue;
+		}
 		cout << "Error: Unrecognized command" << endl;
 
 	} while(strncmp(select, "quit", 4) != 0);

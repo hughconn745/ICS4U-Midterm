@@ -2914,3 +2914,127 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp"
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Word_Count.o" "..\\src\\Word_Count.cpp" 
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
 g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+10:50:49 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+16:03:37 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:14:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < ARRAY_LENGTH * (para_size - 1) - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
+..\src\Array_Resize.cpp: In function 'void grow1DArray(char*, int, int)':
+..\src\Array_Resize.cpp:66:24: error: type 'char' argument given to 'delete', expected pointer
+  delete output[new_size];
+                        ^
+16:06:36 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+16:07:40 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+16:19:10 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:17:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < ARRAY_LENGTH * (para_size - 1) - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:45:85: error: 'resize1DArray' was not declared in this scope
+   resize1DArray(output, arraySize, arraySize + (strlen(newChar) - strlen(keyphrase)));
+                                                                                     ^
+16:19:25 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:17:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < ARRAY_LENGTH * (para_size - 1) - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+16:49:49 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:17:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < ARRAY_LENGTH * (para_size - 1) - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+16:51:04 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+Info: Nothing to build for Midterm_Project
+Info: Nothing to build for Midterm_Project
+Info: Nothing to build for Midterm_Project
+17:03:58 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:16:27 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
+..\src\Array_Resize.cpp: In function 'void growArray(int)':
+..\src\Array_Resize.cpp:6:11: warning: unused variable 'buffer' [-Wunused-variable]
+   char ** buffer = new char *[para_size];
+           ^~~~~~
+..\src\Array_Resize.cpp:12:4: error: 'buffer' was not declared in this scope
+    buffer[i] = array[i];
+    ^~~~~~
+..\src\Array_Resize.cpp:23:15: error: 'buffer' was not declared in this scope
+    array[i] = buffer[i];
+               ^~~~~~
+..\src\Array_Resize.cpp:26:9: error: 'buffer' was not declared in this scope
+  delete buffer[para_size];
+         ^~~~~~
+17:16:54 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
+..\src\Array_Resize.cpp: In function 'void growArray(int)':
+..\src\Array_Resize.cpp:29:6: error: expected 'catch' before 'shrinkArray'
+ void shrinkArray(int new_size) {
+      ^~~~~~~~~~~
+..\src\Array_Resize.cpp:29:6: error: expected '(' before 'shrinkArray'
+..\src\Array_Resize.cpp:29:6: error: expected type-specifier before 'shrinkArray'
+..\src\Array_Resize.cpp:29:32: error: expected ')' before '{' token
+ void shrinkArray(int new_size) {
+                                ^
+..\src\Array_Resize.cpp:58:60: error: a function-definition is not allowed here before '{' token
+ void grow1DArray(char * input, int old_size, int new_size) {
+                                                            ^
+..\src\Array_Resize.cpp:69:62: error: a function-definition is not allowed here before '{' token
+ void shrink1DArray(char * input, int old_size, int new_size) {
+                                                              ^
+..\src\Array_Resize.cpp:77:3: error: expected primary-expression before 'catch'
+ } catch(...) {
+   ^~~~~
+17:17:48 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+17:44:37 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:44:56 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+18:01:44 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+18:04:38 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
+g++ -o Midterm_Project.exe "src\\Add_Null.o" "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
