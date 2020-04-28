@@ -13,6 +13,7 @@ char ** array = new char*[para_size + 1];
 char * select = new char[11];
 char * keywordBuffer = new char[ARRAY_LENGTH];
 char * replaceBuffer = new char[ARRAY_LENGTH];
+
 int main() {
 	array[0] = new char[30];
 	array[1] = new char[30];

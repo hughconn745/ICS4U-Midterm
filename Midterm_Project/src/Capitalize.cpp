@@ -1,42 +1,46 @@
 //Creator: Tahrima Rahman
 //Name: sentence_case
-//Description: capitalizes first word of every sentence in "input" parameter
-//Parameters: array of chars/ a string literal
-//Dependencies: NA
+//Description: capitalizes first word of every sentence in argument for input parameter; also capitalizes all single I's
+//Parameters: a pointer to a 2D array of chars, two integers representing the dimensions of the array
+//Dependencies: includes from Main.h : ctype.h, iostream
 //Throws: NA
 
 #include "Capitalize.h"
 #include "Main.h"
 
-void capitalize(char ** input, int rows, int cols){
-	int tempR = 0;
-	int tempC = 0;
+void capitalize(char ** input, const int rows, const int cols){
 
-	int i = 0;
+	int row = 0; //used to iterate through the rows in input[][]
+	int col = 0;//used to iterate through the columns in input[][]
 
-	int j = 0;
+    int tempR; //will start at row and iterate through input until a letter to be capitalized is found
+	int tempC; //will start at col and iterate through input until a letter to be capitalized is found
 
-	while (i < rows && j < cols){
+	while (row < rows && col < cols){
 
-		if ((i == 0 && j == 0) || (input[i][j] == '!' || input[i][j] == '.' || input[i][j] == '?')){
-			if (isalpha(input[i][j])){
-				input[i][j] = toupper(input[i][j]);
+		if ((row == 0 && col == 0) || (input[row][col] == '!' || input[row][col] == '.' || input[row][col] == '?')){
+			if (isalpha(input[row][col])){
+				input[row][col] = toupper(input[row][col]);
 
 
 			}//end inner if
-			else{
-				tempR = i;
-				tempC = j;
-				while(tempR < rows && tempC < cols){
+			else{ //if the first character after a blank at the end of a sentence is not a letter:
+				tempR = row;
+				tempC = col;
+				while(tempR < rows && tempC < cols){ //iterate through input[] until a letter is found
 					if (isalpha(input[tempR][tempC])){
 						input[tempR][tempC] = toupper(input[tempR][tempC]);
-						i = tempR;
-						j = tempC;
+
+						//once a letter is found start searching for another end of a sentence whereever the iteration ended for the last letter capitalized:
+						row = tempR;
+						col = tempC;
 						break;
 
 					}//end inner inner if
 					else{
 						tempC++;
+
+						//code to prevent exceeding bounds of a particular row:
 						if (tempC == (cols -1 ) && !(isalpha(input[tempR][tempC]))){
 							tempC = 0;
 							tempR++;
@@ -52,18 +56,58 @@ void capitalize(char ** input, int rows, int cols){
 
 		}//end if
 
-		if ((j+1) < cols){
-			j++;
+		//code to prevent exceeding bounds of a particular row:
+		if ((col+1) < cols){
+			col++;
 
 		}//end if
 		else{
-			j=0;
-			i++;
+			col=0;
+			row++;
 
 		}//end else
 
 
 	}//end while
 
+
+    //separate for loop to capitalize all single i's into I's
+    for (int r = 0; r < rows; r++){
+        for (int c = 0; c < cols; c++){
+            if (c==0){
+            	//if there is a lone i at the beginning of a new row followed by a period or other sentence ending punctuation mark:
+                if (input[r][c] == 'i' && (isblank(input[r][c+1]) || input[r][c+1] == '.' || input[r][c+1] == '!' ||  input[r][c+1] == '?')){
+                    input[r][c] = toupper(input[r][c]);
+
+                    }//end inner for
+
+                } else if ((c+1 == cols)){ //if there is a lone i near the end of a row
+                    if (input[r][c] == 'i' && isblank(input[r][c-1])){
+                        input[r][c] = toupper(input[r][c]);
+
+                        }//end inner if
+
+                    } else {
+                    	//if there is a lone i anywhere in the middle of a row:
+                        if (input[r][c] == 'i' && isblank(input[r][c-1]) && (isblank(input[r][c+1]) || input[r][c+1] == '.')){
+
+                             input[r][c] = toupper(input[r][c]);
+
+                            }//end inner if
+
+                        }//end else
+
+
+            }//end c for
+
+        }//end r for
+
+
+
+    //for loop to print out results:
+    for (int i = 0; i < rows; i++){
+            cout << input[i] << endl;
+
+            }
 
 }//end function
