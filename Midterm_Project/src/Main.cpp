@@ -49,7 +49,7 @@ int main() {
 					return 1;
 				}
 
-		if(strncmp(select, "replace", 7) != 0) {
+		if(strncmp(select, "replace", 7) == 0) {
 
 			cout << "Please input the word you wish to replace" << endl;
 
@@ -67,7 +67,7 @@ int main() {
 			continue;
 		}
 
-		if(strncmp(select, "search", 6) != 0) {
+		if(strncmp(select, "search", 7) == 0) {
 
 			cout << "Please input the word you wish to search for" << endl;
 
@@ -80,29 +80,29 @@ int main() {
 			continue;
 		}
 
-		if(strncmp(select, "capitalize", 10) != 0) {
+		if(strncmp(select, "capitalize", 10) == 0) {
 			capitalize(array, para_size - 1, ARRAY_LENGTH);
 			continue;
 		}
 
-		if(strncmp(select, "wordcount", 9) != 0) {
+		if(strncmp(select, "wordcount", 9) == 0) {
 			word_count(array, para_size - 1, ARRAY_LENGTH);
 			continue;
 		}
 
-		if(strncmp(select, "copy", 4) != 0) {
+		if(strncmp(select, "copy", 4) == 0) {
 			outputToClipboard(array);
 			continue;
 		}
 
-		if(strncmp(select, "print", 5) != 0) {
+		if(strncmp(select, "print", 5) == 0) {
 			for(int i = 0; i < para_size - 1; i++)
 				cout << array[i];
 			continue;
 		}
 		cout << "Error: Unrecognized command" << endl;
 
-	} while(strncmp(select, "quit", 4) != 0);
+	} while(strncmp(select, "quit", 10) != 0);
 	cout << "quitting..." << endl;
 
 }
