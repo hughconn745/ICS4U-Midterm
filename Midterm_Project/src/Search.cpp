@@ -10,7 +10,7 @@
 
 void search(char ** input, const char find[], const int rows, const int cols){
 
-	int numFound = 0; //number of occurences of char find[] that were found in char input[][]
+		int numFound = 0; //number of occurences of char find[] that were found in char input[][]
 		int wrdSize = 0; //number of letters in find[]
 
 		int firstCol; //keeps track of the first column in which the first letter of find[] was found in input[][]
@@ -22,82 +22,93 @@ void search(char ** input, const char find[], const int rows, const int cols){
 		while (find[wrdSize] != '\0'){
 		    wrdSize++;
 
-		    }
+		    }//end while
 
 
-		int tempSize = wrdSize; //meant to store the number of letters in find[] temporarily if wrdSize's value needs to change during searching process
-		cout << "Word size is " << wrdSize << endl;
+		int tempSize = wrdSize; //meant to store the number of letters in find[] if wrdSize's value needs to change during searching process
 
-
-		bool checkEach = false; //will confirm whether a part of input[][] matched each letter in find[]
+		bool checkEach = false; //will confirm whether a section of input[][] matched each letter in find[]
 
 
 	    //two for loops to iterate through each char in input[][]
 			for (int i = 0; i < rows; i++){
-				for (int j = 0; j< cols; j++){
+				for (int j = 0; j < strlen(input[i]); j++){
 
 	                //if a letter in input[][] matched the first letter in find[]:
 					if (tolower(input[i][j]) == tolower(find[0])){
 
+						firstRow = i; //mark the row the first letter was found
+						firstCol = j; //mark the column the first letter was found
 
-						findLetter = 0; //mark the position in find[] being evaluated again input[][]
+						wrdSize = tempSize; //reassign wrdSize the value that reflects the actual number of indices in find[]
+
+						findLetter = 0; //mark the position in find[] being evaluated against input[][]
 
 						for (int x = 0; x < wrdSize; x++){//for the length of the number of letters in find[]:
 
-							if ((j+x) >= cols || input[i][j+x] == '\0'){//if number of columns searched in a specific row exceed array bounds of if null terminator in a specific row is reached:
+							if (j+x == strlen(input[i])){//if number of columns searched in a specific row exceed array bounds of a row:
 
-								firstRow = i; //mark the row the first letter was found
 								i++;//increase row number in input[][]
+								j=0;//start at the first column of the next row
 
-								wrdSize-=x; //decrease the number of comparisons between letters since it is a new row
+								wrdSize = wrdSize-x-1; //decrease the number of comparisons between letters since it is a new row
+
 								x=0;//starting at new row
 
-								firstCol = j; //mark the column the first letter was found
-								j=0;//start at the beginning of the column of the next row
+								if (isblank(find[findLetter])){ //if there is a blank space in find[] in the same spot that a row needs to be jumped:
 
-							}
-							if (tolower(input[i][j+x]) == tolower(find[findLetter])){//makes search non-case sensitive
+									findLetter++;//skip the space
+
+									}//end inner inner if
+
+							} //end inner if
+
+							if (tolower(input[i][j+x]) == tolower(find[findLetter])){//makes search non-case-sensitive
+
 								checkEach = true;
 
 	                            findLetter++;//compare next letter in the next iteration
 
 
-							}//end inner if
+							}//end inner if #2
+
 							else{
 
 								checkEach = false;
 								break;
 
-							}//end inner else
+							}//end inner else #2
 
 						}//end inner inner for
 
-		                if (checkEach == true){
+
+						if (checkEach == true){
 						numFound++;
 
 
-						printf("Occurrence of: \"%s\" found at row: %d and column: %d to row : %d and column: %d\n", find, firstRow+1, firstCol+1, (i+1), j+wrdSize);
-	                    wrdSize = tempSize; //revert wrdSize to reflect the actual number of indices in find[] again
+						printf("Occurrence of: \"%s\" found at row: %d column: %d to row : %d column: %d\n", find, firstRow+1, firstCol+1, (i+1), j+wrdSize);
+
 
 				    	}//end second inner if
+
 
 					}//end if
 
 
-				}//end inner for
+				}//end inner for loop for columns
 
 
 
-			}//end for
+			}//end for loop for rows
 
 			if(numFound == 0){
-				cout << "No occurrences found" << endl;
+				cout << "No occurrences of " << find << " were found" << endl;
 
 
 			}//end outer if
 
 			else {
-				cout << "Total of " << numFound << " occurrences were found" << endl;
+				cout << "Total of " << numFound << " occurrences of " << find << " were found" << endl;
 
 
 			}//end outer else
