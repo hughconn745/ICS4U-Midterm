@@ -1,7 +1,0 @@
-#include "Replace.h"
-#include "Main.h"
-
-void replaceWord(char ** input, int * keyphrase, char * newChar) {
-
-
-}

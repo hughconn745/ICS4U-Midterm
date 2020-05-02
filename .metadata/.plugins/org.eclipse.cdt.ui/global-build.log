@@ -3060,3 +3060,989 @@ Info: Nothing to build for Midterm_Project
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
 g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+15:39:32 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:16:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < ARRAY_LENGTH * (para_size - 1) - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:48:23: error: too few arguments to function 'void grow1DArray(char*, int, int)'
+     grow1DArray(output);
+                       ^
+In file included from ..\src\Main.h:6:0,
+                 from ..\src\Replace.cpp:1:
+..\src\Array_Resize.h:3:6: note: declared here
+ void grow1DArray(char * input, int old_size, int new_size);
+      ^~~~~~~~~~~
+15:42:33 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Capitalize.o" "..\\src\\Capitalize.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:16:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < ARRAY_LENGTH * (para_size - 1) - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:51:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(int m = pos; m < pos + strlen(newChar); m++)
+                      ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Search.o" "..\\src\\Search.cpp" 
+..\src\Search.cpp: In function 'void search(char**, const char*, int, int)':
+..\src\Search.cpp:35:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int j = 0; j < strlen(input[i]); j++){
+                     ~~^~~~~~~~~~~~~~~~~~
+..\src\Search.cpp:49:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if (j+x == strlen(input[i])){//if number of columns searched in a specific row exceed array bounds of a row:
+            ~~~~^~~~~~~~~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Word_Count.o" "..\\src\\Word_Count.cpp" 
+..\src\Word_Count.cpp: In function 'int word_count(char**, int, int)':
+..\src\Word_Count.cpp:35:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }//end function
+ ^
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+15:45:57 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:16:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < ARRAY_LENGTH * (para_size - 1) - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:53:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(int m = pos; m < pos + strlen(newChar); m++)
+                      ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+16:05:21 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:16:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < ARRAY_LENGTH * (para_size - 1) - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:54:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(int m = pos; m < pos + strlen(newChar); m++)
+                      ~~^~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:87:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        for(int m = pos; m < pos + strlen(newChar); m++)
+                         ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+16:10:17 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:16:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < ARRAY_LENGTH * (para_size - 1) - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:63:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:69:17: error: 'buffer' was not declared in this scope
+     output[n] = buffer[n - (pos + strlen(newChar) + 2)];
+                 ^~~~~~
+..\src\Replace.cpp:83:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+     if(line == para_size)
+     ^~
+..\src\Replace.cpp:86:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'if'
+      line++;
+      ^~~~
+16:10:48 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:16:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < ARRAY_LENGTH * (para_size - 1) - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:65:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:85:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+     if(line == para_size)
+     ^~
+..\src\Replace.cpp:88:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'if'
+      line++;
+      ^~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+Info: Nothing to build for Midterm_Project
+16:59:55 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:16:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < ARRAY_LENGTH * (para_size - 1) - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:65:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+17:01:55 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:09:24 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:16:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:18:25: error: cannot convert 'char*' to 'char**' for argument '1' to 'void search(char**, const char*, int, int)'
+   search(output, newChar);
+                         ^
+..\src\Replace.cpp:52:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+17:17:50 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:16:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:18:45: error: 'searchForPhrase' was not declared in this scope
+   pos = searchForPhrase(output, newChar, pos);
+                                             ^
+..\src\Replace.cpp:52:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:88:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:88:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+  ^~~
+..\src\Replace.cpp:91:3: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'for'
+   while(strncmp(toCmp, keyphrase, strlen(keyphrase))) {
+   ^~~~~
+..\src\Replace.cpp:95:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                            ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+17:18:27 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:16:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:18:45: error: 'searchForPhrase' was not declared in this scope
+   pos = searchForPhrase(output, newChar, pos);
+                                             ^
+..\src\Replace.cpp:52:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:88:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:95:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                           ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+17:19:04 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                           ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:46:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:82:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:19:56 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                           ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:46:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:82:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:22:11 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                           ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:46:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:82:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:22:52 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                           ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:46:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:82:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:23:39 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                           ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:46:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:82:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:24:55 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                           ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:46:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:82:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+17:26:49 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                           ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:46:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:82:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Array_Resize.o" "..\\src\\Array_Resize.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:29:05 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                           ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:46:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:82:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:30:32 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                           ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:46:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:82:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:32:21 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++) {
+                           ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:48:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:84:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+17:33:34 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = pos, j = 0; i < strlen(keyphrase) + pos - 1; i++, j++) {
+                           ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:48:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:84:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:35:30 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:48:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:84:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:38:10 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:48:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:84:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:52:50 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:48:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:84:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:54:10 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:48:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:84:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:54:20 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:48:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:84:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+17:55:52 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:48:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:84:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+17:58:08 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:48:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:84:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+18:03:04 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:10:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(strncmp(toCmp, keyphrase, strlen(keyphrase)) && pos <= strlen(input)) {
+                                                        ~~~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:48:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:50:56: error: too many arguments to function 'int searchForPhrase(char*, char*, int)'
+   pos = searchForPhrase(output, newChar, pos, arraySize);
+                                                        ^
+..\src\Replace.cpp:3:5: note: declared here
+ int searchForPhrase(char * input, char * keyphrase, int pos) {
+     ^~~~~~~~~~~~~~~
+..\src\Replace.cpp:84:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+18:03:26 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:10:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(strncmp(toCmp, keyphrase, strlen(keyphrase)) && pos <= strlen(input)) {
+                                                        ~~~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:48:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:84:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+18:04:44 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:10:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(strncmp(toCmp, keyphrase, strlen(keyphrase)) && pos <= strlen(input)) {
+                                                        ~~~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:48:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:84:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+18:06:20 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:10:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(strncmp(toCmp, keyphrase, strlen(keyphrase)) && pos <= strlen(input)) {
+                                                        ~~~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:48:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:84:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+18:07:11 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:10:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(strncmp(toCmp, keyphrase, strlen(keyphrase)) && pos <= strlen(input)) {
+                                                        ~~~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:48:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:84:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+18:09:41 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:10:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(strncmp(toCmp, keyphrase, strlen(keyphrase)) && pos <= strlen(input)) {
+                                                        ~~~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:48:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:84:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+Info: Nothing to build for Midterm_Project
+18:11:45 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:10:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(strncmp(toCmp, keyphrase, strlen(keyphrase)) && pos <= strlen(input)) {
+                                                        ~~~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:49:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:85:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+18:15:18 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:10:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(strncmp(toCmp, keyphrase, strlen(keyphrase)) && pos <= strlen(input)) {
+                                                        ~~~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:49:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:85:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+18:17:22 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:10:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(strncmp(toCmp, keyphrase, strlen(keyphrase)) && pos <= strlen(input)) {
+                                                        ~~~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:53:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:89:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+18:18:44 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:10:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(strncmp(toCmp, keyphrase, strlen(keyphrase)) && pos <= strlen(input)) {
+                                                        ~~~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:53:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < arraySize - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:89:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+18:20:12 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:10:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(strncmp(toCmp, keyphrase, strlen(keyphrase)) && pos <= strlen(input)) {
+                                                        ~~~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:53:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < strlen(output) - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:89:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+18:21:37 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:10:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(strncmp(toCmp, keyphrase, strlen(keyphrase)) && pos <= strlen(input)) {
+                                                        ~~~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:53:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < strlen(output) - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:89:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+18:22:52 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:10:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(strncmp(toCmp, keyphrase, strlen(keyphrase)) && pos <= strlen(input)) {
+                                                        ~~~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:53:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < strlen(output) - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:89:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+18:24:35 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:10:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(strncmp(toCmp, keyphrase, strlen(keyphrase)) && pos <= strlen(input)) {
+                                                        ~~~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:53:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < strlen(output) - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:89:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:110:56: error: expected ';' before 'endl'
+     cout << "check 11 : " << progress << " : " << line endl;
+                                                        ^~~~
+18:24:45 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:10:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(strncmp(toCmp, keyphrase, strlen(keyphrase)) && pos <= strlen(input)) {
+                                                        ~~~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:53:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < strlen(output) - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:89:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+18:26:25 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:10:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(strncmp(toCmp, keyphrase, strlen(keyphrase)) && pos <= strlen(input)) {
+                                                        ~~~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:53:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < strlen(output) - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:89:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:100:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i = 0; i < strlen(output); i++)
+                   ~~^~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+Info: Nothing to build for Midterm_Project
+18:27:24 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:10:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(strncmp(toCmp, keyphrase, strlen(keyphrase)) && pos <= strlen(input)) {
+                                                        ~~~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:53:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < strlen(output) - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:89:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:100:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i = 0; i < strlen(output); i++)
+                   ~~^~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+18:32:43 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:10:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(strncmp(toCmp, keyphrase, strlen(keyphrase)) && pos <= strlen(input)) {
+                                                        ~~~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:53:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < strlen(output) - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:73:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int l = pos; l < strlen(output); l++)
+                     ~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:80:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int l = pos; l < strlen(output); l++)
+                     ~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:87:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:98:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i = 0; i < strlen(output); i++)
+                   ~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:101:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    while(progress != strlen(output)) {
+          ~~~~~~~~~^~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+18:33:28 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:10:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(strncmp(toCmp, keyphrase, strlen(keyphrase)) && pos <= strlen(input)) {
+                                                        ~~~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:53:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < strlen(output) - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:73:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int l = pos; l < strlen(output); l++)
+                     ~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:80:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int l = pos; l < strlen(output); l++)
+                     ~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:87:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:98:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i = 0; i < strlen(output); i++)
+                   ~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:101:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    while(progress != strlen(output)) {
+          ~~~~~~~~~^~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
+18:33:59 **** Incremental Build of configuration Debug for project Midterm_Project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Replace.o" "..\\src\\Replace.cpp" 
+..\src\Replace.cpp: In function 'int searchForPhrase(char*, char*, int)':
+..\src\Replace.cpp:7:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = pos, j = 0; i < strlen(keyphrase) + pos; i++, j++)
+                          ~~^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:10:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(strncmp(toCmp, keyphrase, strlen(keyphrase)) && pos <= strlen(input)) {
+                                                        ~~~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:14:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i < strlen(keyphrase); i++) {
+                  ~~^~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp: In function 'void replaceWord(char**, char*, char*)':
+..\src\Replace.cpp:53:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  while(pos < strlen(output) - strlen(keyphrase)) {
+        ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:73:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int l = pos; l < strlen(output); l++)
+                     ~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:80:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int l = pos; l < strlen(output); l++)
+                     ~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:87:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int m = pos; m < pos + strlen(newChar); m++)
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+..\src\Replace.cpp:98:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i = 0; i < strlen(output); i++)
+                   ~~^~~~~~~~~~~~~~~~
+..\src\Replace.cpp:101:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    while(progress != strlen(output)) {
+          ~~~~~~~~~^~~~~~~~~~~~~~~~~
+g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 

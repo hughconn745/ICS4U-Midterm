@@ -1,28 +1,27 @@
 #include "Main.h"
-#include "Array_Resize.h"
 
 void growArray(int new_size) {
-	cout << "sub stage 1" << endl;
-		char ** buffer = new char *[para_size];
-	cout << "sub stage 2" << endl;
+
+	char ** buffer = new char *[para_size];
+
 	for(int i = 0; i < para_size; i++) {
 		for(int j = 0; j < ARRAY_LENGTH; j++)
 			buffer[i] = array[i];
 	}
-	cout << "sub stage 3" << endl;
+
 	array = new char *[new_size];
-	cout << "sub stage 4" << endl;
+
 	for(int i = para_size; i < new_size; i++) {
 		array[i] = new char[ARRAY_LENGTH];
 	}
-	cout << "sub stage 5" << endl;
+
 	for(int i = 0; i < para_size; i++) {
 		for(int j = 0; j < ARRAY_LENGTH; j++)
 			array[i] = buffer[i];
 	}
-	cout << "sub stage 6" << endl;
+	//cout << "sub stage 6" << endl;
 	delete buffer[para_size];
-	cout << "sub stage 7" << endl;
+	//cout << "sub stage 7" << endl;
 	return;
 }
 

@@ -27,19 +27,19 @@ int main() {
 	int k = 0;
 
 	do {
-		cout << "stage 1" << endl;
+
 		if(fgets(array[k], 28, stdin) == NULL) {
 			return 1;
 		}
-		cout << "stage 2" << endl;
+
 		if(k == para_size - 1) {
-			cout << "stage 2.5" << endl;
+			//cout << "stage 2.5" << endl;
 			growArray(para_size + 1);
 		}
-		cout << "stage 3" << endl;
+		//cout << "stage 3" << endl;
 		k++;
 		para_size++;
-		cout << "stage 4" << endl;
+
 	} while(strncmp(array[k - 1], "end", 3) != 0);
 
 	do {
@@ -57,13 +57,15 @@ int main() {
 				return 1;
 			}
 
-			cout << "Please input the word you wish to replace the first word" << endl;
+			cout << "Please input the word you wish to replace it with" << endl;
 
 			if(fgets(replaceBuffer, 28, stdin) == NULL) {
 				return 1;
 			}
 
 			replaceWord(array, keywordBuffer, replaceBuffer);
+
+			cout << "replace done!" << endl;
 			continue;
 		}
 
