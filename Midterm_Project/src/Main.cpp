@@ -33,16 +33,17 @@ int main() {
 		}
 
 		if(k == para_size - 1) {
-			//cout << "stage 2.5" << endl;
+
 			growArray(para_size + 1);
 		}
-		//cout << "stage 3" << endl;
+
 		k++;
 		para_size++;
 
 	} while(strncmp(array[k - 1], "end", 3) != 0);
 
-	do {
+	while(true) {
+
 		cout << "Please enter one of the following commands:\n" << "-> replace\n-> search\n-> capitalize\n-> wordcount\n-> copy\n-> print\n-> quit" << endl;
 
 		if(fgets(select, 10, stdin) == NULL) {
@@ -65,7 +66,8 @@ int main() {
 
 			replaceWord(array, keywordBuffer, replaceBuffer);
 
-			cout << "replace done!" << endl;
+			fflush(stdin);
+
 			continue;
 		}
 
@@ -78,6 +80,8 @@ int main() {
 			}
 
 			search(array, keywordBuffer, para_size - 1, ARRAY_LENGTH);
+
+			fflush(stdin);
 
 			continue;
 		}
@@ -102,9 +106,14 @@ int main() {
 				cout << array[i];
 			continue;
 		}
+
+		if(strncmp(select, "quit", 4) == 0)
+			break;
+
 		cout << "Error: Unrecognized command" << endl;
 
-	} while(strncmp(select, "quit", 10) != 0);
+	}
+
 	cout << "quitting..." << endl;
 
 }

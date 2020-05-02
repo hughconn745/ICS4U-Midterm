@@ -19,9 +19,9 @@ void growArray(int new_size) {
 		for(int j = 0; j < ARRAY_LENGTH; j++)
 			array[i] = buffer[i];
 	}
-	//cout << "sub stage 6" << endl;
-	delete buffer[para_size];
-	//cout << "sub stage 7" << endl;
+
+	delete buffer;
+
 	return;
 }
 
@@ -50,7 +50,7 @@ void shrinkArray(int new_size) {
 			array[i] = buffer[i];
 	}
 
-	delete buffer[para_size];
+	delete buffer;
 	return;
 }
 
@@ -60,9 +60,11 @@ void grow1DArray(char * input, int old_size, int new_size) {
 	for(int i = 0; i < old_size; i++)
 		output[i] = input[i];
 
+	//delete input;
+
 	input = output;
 
-	//delete output;
+
 }
 
 void shrink1DArray(char * input, int old_size, int new_size) {
@@ -71,7 +73,7 @@ void shrink1DArray(char * input, int old_size, int new_size) {
 	for(int i = 0; i < new_size; i++)
 		output[i] = input[i];
 
-	input = output;
+	//delete input;
 
-	//delete output;
+	input = output;
 }
