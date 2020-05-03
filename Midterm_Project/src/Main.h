@@ -1,6 +1,6 @@
-#include <stdio.h> //scanf, fflush, etc.
-#include <ctype.h> //for comparing chars
-#include <string.h> //string processing functions
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
 #include <cstring>
 #include <iostream>
 #include "Array_Resize.h"

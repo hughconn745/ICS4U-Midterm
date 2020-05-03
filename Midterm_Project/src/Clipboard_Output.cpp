@@ -1,10 +1,14 @@
 #include <windows.h>
-#include <iostream>
-#include <string.h>
 #include "Main.h"
-#include "Clipboard_Output.h"
-using namespace std;
 
+/**Description: Copy's the contents of a 2-dimensional array to the clip board of the user
+ *
+ *Parameters:
+ *	char ** array, the 2-dimensional array to copy to the clip board
+ *
+ *Returns:
+ *	None
+ */
 void outputToClipboard(char ** array) {
     char* output = new char[ARRAY_LENGTH * (para_size - 1)];
 

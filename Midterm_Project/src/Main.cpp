@@ -1,12 +1,6 @@
 #include "Main.h"
-#include "Array_Resize.h"
-#include "Replace.h"
-#include "Clipboard_Output.h"
-#include "Capitalize.h"
-#include "Search.h"
-#include "Word_Count.h"
 
-
+//Global Variables
 int para_size = 1;
 int ARRAY_LENGTH = 30;
 char ** array = new char*[para_size + 1];
@@ -15,6 +9,8 @@ char * keywordBuffer = new char[ARRAY_LENGTH];
 char * replaceBuffer = new char[ARRAY_LENGTH];
 
 int main() {
+
+	//Allocating the inital memory for the main global array
 	array[0] = new char[30];
 	array[1] = new char[30];
 
@@ -23,7 +19,7 @@ int main() {
 	fflush(stdout);
 
 
-
+	//Primary Input Array
 	int k = 0;
 
 	do {
@@ -42,14 +38,17 @@ int main() {
 
 	} while(strncmp(array[k - 1], "end", 3) != 0);
 
+	//Main Command Loop
 	while(true) {
 
 		cout << "Please enter one of the following commands:\n" << "-> replace\n-> search\n-> capitalize\n-> wordcount\n-> copy\n-> print\n-> quit" << endl;
 
+		//Command Input
 		if(fgets(select, 10, stdin) == NULL) {
 					return 1;
 				}
 
+		//Command Selection Block
 		if(strncmp(select, "replace", 7) == 0) {
 
 			cout << "Please input the word you wish to replace" << endl;
