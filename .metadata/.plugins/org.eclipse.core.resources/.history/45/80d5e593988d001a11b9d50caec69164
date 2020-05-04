@@ -134,8 +134,8 @@ void replaceWord(char ** input, char * keyphrase, char * newChar) {
 			char * buffer = new char[arraySize - pos];
 
 
-			for(int l = pos + strlen(keyphrase) - 1, n = 0; l <= strlen(output); l++, n++)
-				buffer[n] = output[l];
+			for(int l = pos + strlen(keyphrase) - 1; l < strlen(output); l++)
+				buffer[l - (pos + strlen(keyphrase) - 1)] = output[l];
 
 			cout << "Buffer: " << buffer << " : end of buffer" << endl;
 			if(strlen(newChar) - strlen(keyphrase) > 0) {
@@ -146,24 +146,18 @@ void replaceWord(char ** input, char * keyphrase, char * newChar) {
 
 			arraySize += (strlen(newChar) - strlen(keyphrase));
 
-			for(int m = pos; m < pos + strlen(newChar) - 1; m++) {
-
+			for(int m = pos; m < pos + strlen(newChar) - 1; m++)
 				output[m] = newChar[m - pos];
 
-				cout << m - pos << " : " << m << " : " << output[m] << " : " << newChar[m - pos] << endl;
-			}
 			cout << "check 1 :" << output << endl;
 
 			output[pos + strlen(newChar) - 1] = ' ';
 
-			cout << "check 2 :" << output << " : " << pos + strlen(newChar) << " : " << strlen(buffer) << endl;
+			cout << "check 2 :" << output << endl;
 
-			for(int n = pos + strlen(newChar), l = 0; l <= strlen(buffer); n++, l++) {
+			for(int n = pos + strlen(newChar) - 1, l = 0; n < strlen(buffer); n++, l++)
 				output[n] = buffer[l];
 
-				cout << n << " : " << l << " : " << output[n] << " : " << newChar[l] << endl;
-
-			}
 			delete buffer;
 
 			cout << "check 3 :" << output << endl;

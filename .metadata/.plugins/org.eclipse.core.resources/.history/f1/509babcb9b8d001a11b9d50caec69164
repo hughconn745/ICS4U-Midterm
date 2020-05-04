@@ -76,11 +76,11 @@ int main() {
 
 			cout << "Please input the word you wish to search for" << endl;
 
+			keywordBuffer[strlen(keywordBuffer) - 1] = '\0';
+
 			if(fgets(keywordBuffer, 28, stdin) == NULL) {
 				return 1;
 			}
-
-			keywordBuffer[strlen(keywordBuffer) - 1] = '\0';
 
 			search(array, keywordBuffer, para_size - 1, ARRAY_LENGTH);
 

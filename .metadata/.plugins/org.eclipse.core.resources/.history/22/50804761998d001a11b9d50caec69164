@@ -156,9 +156,9 @@ void replaceWord(char ** input, char * keyphrase, char * newChar) {
 
 			output[pos + strlen(newChar) - 1] = ' ';
 
-			cout << "check 2 :" << output << " : " << pos + strlen(newChar) << " : " << strlen(buffer) << endl;
+			cout << "check 2 :" << output << endl;
 
-			for(int n = pos + strlen(newChar), l = 0; l <= strlen(buffer); n++, l++) {
+			for(int n = pos + strlen(newChar), l = 0; n <= strlen(buffer); n++, l++) {
 				output[n] = buffer[l];
 
 				cout << n << " : " << l << " : " << output[n] << " : " << newChar[l] << endl;

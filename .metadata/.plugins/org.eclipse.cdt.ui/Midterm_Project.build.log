@@ -1,7 +1,7 @@
-17:17:35 **** Incremental Build of configuration Debug for project Midterm_Project ****
+20:11:26 **** Incremental Build of configuration Debug for project Midterm_Project ****
 Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clipboard_Output.o" "..\\src\\Clipboard_Output.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main.o" "..\\src\\Main.cpp" 
 g++ -o Midterm_Project.exe "src\\Array_Resize.o" "src\\Capitalize.o" "src\\Clipboard_Output.o" "src\\Main.o" "src\\Replace.o" "src\\Search.o" "src\\Word_Count.o" 
 
-17:17:38 Build Finished. 0 errors, 0 warnings. (took 2s.790ms)
+20:11:28 Build Finished. 0 errors, 0 warnings. (took 1s.462ms)
 

@@ -4,7 +4,7 @@
 int para_size = 1;
 int ARRAY_LENGTH = 30;
 char ** array = new char*[para_size + 1];
-char * select = new char[12];
+char * select = new char[11];
 char * keywordBuffer = new char[ARRAY_LENGTH];
 char * replaceBuffer = new char[ARRAY_LENGTH];
 
@@ -44,11 +44,9 @@ int main() {
 		cout << "Please enter one of the following commands:\n" << "-> replace\n-> search\n-> capitalize\n-> wordcount\n-> copy\n-> print\n-> quit" << endl;
 
 		//Command Input
-		if(fgets(select, 11, stdin) == NULL) {
+		if(fgets(select, 10, stdin) == NULL) {
 					return 1;
 				}
-
-		fflush(stdin);
 
 		//Command Selection Block
 		if(strncmp(select, "replace", 7) == 0) {
@@ -72,15 +70,13 @@ int main() {
 			continue;
 		}
 
-		if(strncmp(select, "search", 6) == 0) {
+		if(strncmp(select, "search", 7) == 0) {
 
 			cout << "Please input the word you wish to search for" << endl;
 
 			if(fgets(keywordBuffer, 28, stdin) == NULL) {
 				return 1;
 			}
-
-			keywordBuffer[strlen(keywordBuffer) - 1] = '\0';
 
 			search(array, keywordBuffer, para_size - 1, ARRAY_LENGTH);
 

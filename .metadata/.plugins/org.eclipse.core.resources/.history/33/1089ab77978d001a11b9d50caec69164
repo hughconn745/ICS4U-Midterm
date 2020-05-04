@@ -42,7 +42,7 @@ int searchForPhrase(char * input, char * keyphrase, int pos) {
 
 	if(found) {
 
-		cout << "Instance of keyphrase found:" << endl;
+		cout << "Instance of keyphrase found:" << pos << endl;
 
 		//Output a snippet of the phrase so the user understands where the instance of the key phrase is
 		int ext = 10;
@@ -134,10 +134,9 @@ void replaceWord(char ** input, char * keyphrase, char * newChar) {
 			char * buffer = new char[arraySize - pos];
 
 
-			for(int l = pos + strlen(keyphrase) - 1, n = 0; l <= strlen(output); l++, n++)
-				buffer[n] = output[l];
+			for(int l = pos + strlen(keyphrase) - 1; l < strlen(output); l++)
+				buffer[l - (pos + strlen(keyphrase) - 1)] = output[l];
 
-			cout << "Buffer: " << buffer << " : end of buffer" << endl;
 			if(strlen(newChar) - strlen(keyphrase) > 0) {
 
 				grow1DArray(output, arraySize, arraySize + (strlen(newChar) - strlen(keyphrase)));
@@ -146,27 +145,19 @@ void replaceWord(char ** input, char * keyphrase, char * newChar) {
 
 			arraySize += (strlen(newChar) - strlen(keyphrase));
 
-			for(int m = pos; m < pos + strlen(newChar) - 1; m++) {
-
+			for(int m = pos; m < pos + strlen(newChar) - 1; m++)
 				output[m] = newChar[m - pos];
 
-				cout << m - pos << " : " << m << " : " << output[m] << " : " << newChar[m - pos] << endl;
-			}
-			cout << "check 1 :" << output << endl;
-
+			cout << "check 1 :" << output <<  " : " << pos + strlen(newChar) - 2 <<endl;
 			output[pos + strlen(newChar) - 1] = ' ';
 
-			cout << "check 2 :" << output << " : " << pos + strlen(newChar) << " : " << strlen(buffer) << endl;
-
-			for(int n = pos + strlen(newChar), l = 0; l <= strlen(buffer); n++, l++) {
+			cout << "check 2 :" << output << " : " << pos + strlen(newChar) - 1 << endl;
+			for(int n = pos + strlen(newChar) , l = 0; n < strlen(buffer); n++, l++)
 				output[n] = buffer[l];
 
-				cout << n << " : " << l << " : " << output[n] << " : " << newChar[l] << endl;
-
-			}
 			delete buffer;
 
-			cout << "check 3 :" << output << endl;
+			cout << "check 3 :" << output << " : " << pos + strlen(newChar) << endl;
 			int progress = 0;
 			int line = 0;
 
