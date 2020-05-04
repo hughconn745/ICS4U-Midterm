@@ -137,7 +137,6 @@ void replaceWord(char ** input, char * keyphrase, char * newChar) {
 			for(int l = pos + strlen(keyphrase) - 1, n = 0; l <= strlen(output); l++, n++)
 				buffer[n] = output[l];
 
-			cout << "Buffer: " << buffer << " : end of buffer" << endl;
 			if(strlen(newChar) - strlen(keyphrase) > 0) {
 
 				grow1DArray(output, arraySize, arraySize + (strlen(newChar) - strlen(keyphrase)));
@@ -150,18 +149,10 @@ void replaceWord(char ** input, char * keyphrase, char * newChar) {
 
 				output[m] = newChar[m - pos];
 
-				cout << m - pos << " : " << m << " : " << output[m] << " : " << newChar[m - pos] << endl;
 			}
-			cout << "check 1 :" << output << endl;
 
-			output[pos + strlen(newChar) - 1] = ' ';
-
-			cout << "check 2 :" << output << " : " << pos + strlen(newChar) << " : " << strlen(buffer) << endl;
-
-			for(int n = pos + strlen(newChar), l = 0; l <= strlen(buffer); n++, l++) {
+			for(int n = pos + strlen(newChar) - 1, l = 0; l <= strlen(buffer); n++, l++) {
 				output[n] = buffer[l];
-
-				cout << n << " : " << l << " : " << output[n] << " : " << newChar[l] << endl;
 
 			}
 			delete buffer;
@@ -174,15 +165,20 @@ void replaceWord(char ** input, char * keyphrase, char * newChar) {
 
 				for(int p = 0; p < 29; p++) {
 
-					array[line][progress] = output[progress];
+					cout << "\t\t\t" << progress << " : " << output[progress] << endl;
+
+					array[line][p] = output[progress];
 
 					if(output[progress] == '\n' || output[progress] == '\0'){
 
+						array[line][p + 1] = '\0';
 						progress++;
 						break;
 					}
 						progress++;
 				}
+
+				array[line][30] = '\0';
 
 			cout << "check 11 : " << progress << " : " << line << endl;
 
