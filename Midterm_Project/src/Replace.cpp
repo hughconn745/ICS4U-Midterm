@@ -117,6 +117,7 @@ void replaceWord(char ** input, char * keyphrase, char * newChar) {
 				cout << "Error: Failed to receive input" << endl;
 			}
 
+			//Goes to next occurance if user inputs no
 			if(strncmp(choice, "no", 2) == 0) {
 
 				cout << "skipping" << endl;
@@ -133,7 +134,7 @@ void replaceWord(char ** input, char * keyphrase, char * newChar) {
 
 			char * buffer = new char[arraySize - pos];
 
-
+			//Copies data to buffer after key phrase
 			for(int l = pos + strlen(keyphrase) - 1, n = 0; l <= strlen(output); l++, n++)
 				buffer[n] = output[l];
 
@@ -145,27 +146,26 @@ void replaceWord(char ** input, char * keyphrase, char * newChar) {
 
 			arraySize += (strlen(newChar) - strlen(keyphrase));
 
+			//Copies over new word over key phrase
 			for(int m = pos; m < pos + strlen(newChar) - 1; m++) {
-
 				output[m] = newChar[m - pos];
 
 			}
 
+			//Copies over rest of phrase that was after the key phrase
 			for(int n = pos + strlen(newChar) - 1, l = 0; l <= strlen(buffer); n++, l++) {
 				output[n] = buffer[l];
 
 			}
 			delete buffer;
 
-			cout << "check 3 :" << output << endl;
 			int progress = 0;
 			int line = 0;
 
+			//Copies new phrase back onto main array
 			while(progress <= strlen(output)) {
 
 				for(int p = 0; p < 29; p++) {
-
-					cout << "\t\t\t" << progress << " : " << output[progress] << endl;
 
 					array[line][p] = output[progress];
 
@@ -179,8 +179,6 @@ void replaceWord(char ** input, char * keyphrase, char * newChar) {
 				}
 
 				array[line][30] = '\0';
-
-			cout << "check 11 : " << progress << " : " << line << endl;
 
 			if(line == para_size)
 				growArray(para_size + 1);

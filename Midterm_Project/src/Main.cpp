@@ -117,6 +117,4 @@ int main() {
 
 	}
 
-	cout << "quitting..." << endl;
-
 }
